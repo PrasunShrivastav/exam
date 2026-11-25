@@ -1,0 +1,5278 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Machine Learning - Six-Paper PYQ Revision Pack by Module
+  </title>
+  <style>
+   :root{--ink:#172033;--muted:#596579;--line:#dbe2ec;--soft:#f4f7fb;--blue:#244a78;--blue2:#eaf2fb;--green:#eaf6ef;--amber:#fff5df;--red:#fff0ee;--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#f2f5f9;color:var(--ink);font:16px/1.58 Arial,Helvetica,sans-serif}
+header{background:#172b45;color:#fff;padding:34px max(22px,calc((100% - 1120px)/2)) 28px} header h1{font-size:30px;line-height:1.15;margin:0 0 10px} header p{margin:6px 0;color:#dce7f4;max-width:850px}
+main{max-width:1120px;margin:22px auto;padding:0 18px 60px}.panel,.topic{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin:16px 0;box-shadow:0 2px 8px rgba(27,44,70,.04)}
+h2{font-size:23px;color:#183555;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line)}h3{font-size:19px;color:#244a78;margin:20px 0 8px}h4{font-size:16px;margin:14px 0 5px;color:#24344b}p{margin:8px 0}ul,ol{padding-left:24px;margin:7px 0 12px}li{margin:4px 0} .small{font-size:13px;color:var(--muted)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.nav a{display:inline-block;padding:7px 10px;background:#fff;color:#1b416c;border:1px solid #b9cbe0;border-radius:7px;text-decoration:none;font-size:13px}.nav a:hover{background:#eaf2fb}
+.callout{padding:13px 16px;border-left:4px solid #315f91;background:var(--blue2);border-radius:7px;margin:12px 0}.memory{background:var(--green);border-left:4px solid #39865a;padding:10px 14px;border-radius:7px;margin:12px 0}.warning{background:var(--amber);border-left:4px solid #cc8d21;padding:10px 14px;border-radius:7px;margin:12px 0}.danger{background:var(--red);border-left:4px solid #bf5148;padding:10px 14px;border-radius:7px;margin:12px 0}
+.tag{display:inline-block;border:1px solid #cbd8e8;background:#f3f7fc;color:#284a70;border-radius:20px;padding:2px 8px;font-size:12px;margin:2px 4px 2px 0}.eq{display:block;background:#f6f8fb;border:1px solid #e1e7ef;border-radius:7px;padding:10px 13px;margin:9px 0;font-family:Cambria,Georgia,serif;font-size:17px;overflow-x:auto}.eq.center{text-align:center}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.mini{background:#f8fafc;border:1px solid var(--line);border-radius:9px;padding:13px}.mini strong{color:#1f426b}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:14px}th,td{border:1px solid #ccd5e1;padding:8px 9px;text-align:left;vertical-align:top}th{background:#edf2f8;color:#203c5d}tr:nth-child(even) td{background:#fbfcfe}.num{text-align:right;font-variant-numeric:tabular-nums}.diagram{background:#fbfcfe;border:1px solid var(--line);border-radius:9px;padding:10px;margin:12px 0;overflow-x:auto;text-align:center}.diagram svg{max-width:100%;height:auto}.caption{font-size:13px;color:var(--muted);margin-top:5px}
+.topic{scroll-margin-top:12px}.topic h2 .q{font-size:12px;vertical-align:middle;margin-left:6px;color:#53647c;font-weight:normal}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.formula-list li{margin:7px 0}footer{max-width:1120px;margin:0 auto;padding:0 18px 35px;color:#6b7585;font-size:13px}
+@media(max-width:700px){header h1{font-size:24px}.panel,.topic{padding:16px}.two-col{grid-template-columns:1fr}table{font-size:12px}th,td{padding:6px}}
+@media print{body{background:white;font-size:11pt}header{background:white;color:#111;padding:0 0 16px;border-bottom:2px solid #333}header p{color:#333}.nav{display:none}main{max-width:none;margin:0;padding:0}.panel,.topic{box-shadow:none;break-inside:avoid;border:1px solid #bbb;margin:10px 0;padding:14px}a{color:#111;text-decoration:none}.topic h2{break-after:avoid}footer{display:none}}
+   .module{border:2px solid #bdcddd}.module>h2{color:#152f4b}.subtopic{margin:20px 0 0;padding:16px 0 0;border-top:1px solid #e4eaf2}.subtopic:first-of-type{border-top:0}.subtopic>h3{font-size:20px;margin:8px 0 12px;color:#1b426b}.subtopic h4{font-size:16px;color:#244a78;margin:18px 0 7px}.module>.tag{margin:0 0 8px}.module>.small{margin:0 0 8px}.module .q{font-size:12px;color:#596579;font-weight:normal}.panel{scroll-margin-top:14px}
+   .crosswalk-wrap{overflow-x:auto}.crosswalk-wrap table{min-width:920px}.crosswalk-wrap th,.crosswalk-wrap td{font-size:13px}
+   .recap{border-left:5px solid #39865a;background:#f7fbf8}.recap h3{margin-top:0}.recap ul{margin-bottom:0}
+   details{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:10px 0;background:#fbfcfe}
+   summary{cursor:pointer;font-weight:bold;color:#244a78}summary:hover{color:#315f91}
+   details ol,details ul{margin:10px 0 4px}.gloss p{margin:4px 0}
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Machine Learning - Six-Paper PYQ Revision Pack
+   </h1>
+   <p>
+    BE Computer Engineering, Semester VII | Mumbai University | Subject Code 42171
+   </p>
+   <p>
+    Six previous-year papers consolidated and classified under the six syllabus modules. Repeated questions are answered once; different numerical datasets are solved separately.
+   </p>
+   <div class="nav">
+    <a href="#start">
+     Last-hour strategy
+    </a>
+    <a href="#repeat">
+     Frequency map
+    </a>
+    <a href="#module1">
+     Module 1
+    </a>
+    <a href="#module2">
+     Module 2
+    </a>
+    <a href="#module3">
+     Module 3
+    </a>
+    <a href="#module4">
+     Module 4
+    </a>
+    <a href="#module5">
+     Module 5
+    </a>
+    <a href="#module6">
+     Module 6
+    </a>
+    <a href="#formula-sheet">
+     Formula sheet
+    </a>
+    <a href="#glossary">
+     Glossary
+    </a>
+    <a href="#self-check">
+     Self-check
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="panel" id="start">
+    <h2>
+     How to use this in the final hour
+    </h2>
+    <div class="callout">
+     <strong>
+      Do not try to memorize every sentence.
+     </strong>
+     For a 10-mark theory answer, write: definition (1-2 marks) + labelled diagram/workflow + 5-7 ordered points/steps + advantages or applications + one-line conclusion. For a numerical, show formula, substitution, intermediate values and final answer with units.
+    </div>
+    <div class="grid">
+     <div class="mini">
+      <strong>
+       First 15 minutes
+      </strong>
+      <br/>
+      Module 2: regression formulas, classification metrics, Gini and CART.
+     </div>
+     <div class="mini">
+      <strong>
+       Next 10 minutes
+      </strong>
+      <br/>
+      Module 3: Random Forest, Bagging vs Boosting, XGBoost and K-fold.
+     </div>
+     <div class="mini">
+      <strong>
+       Next 10 minutes
+      </strong>
+      <br/>
+      Module 5: DBSCAN numerical, MST, distance metrics and EM.
+     </div>
+     <div class="mini">
+      <strong>
+       Next 10 minutes
+      </strong>
+      <br/>
+      Module 4 and 6: SVM/kernel, multiclass, PCA and LDA.
+     </div>
+     <div class="mini">
+      <strong>
+       Last 5 minutes
+      </strong>
+      <br/>
+      Module 1 definitions, ML steps, issues, applications and bias-variance.
+     </div>
+    </div>
+    <div class="warning">
+     <strong>
+      Exam strategy:
+     </strong>
+     Q1 is compulsory (attempt four short/medium parts). You then attempt any three of Q2-Q6. Choose questions whose full answer you can structure confidently. The frequency table below is a revision guide, not a prediction of the next paper.
+    </div>
+    <p class="small">
+     Paper labels follow the dates visible on the papers: May 2023; May 2024; 12 Nov 2024 (file named 2024 December); 2 Jun 2025 (file named 2025 May); 10 Nov 2025 (file named 2025 December); and 4 Jun 2026 (Summer 2026 paper).
+    </p>
+   </section>
+   <section class="panel" id="repeat">
+    <h2>
+     Six-paper topic frequency - repeated answers are consolidated below
+    </h2>
+    <p>
+     Frequency counts refer to the six uploaded papers, identified by the date written on each page. A topic may appear in a different question number or as a worked numerical in different papers.
+    </p>
+    <table>
+     <tr>
+      <th>
+       Topic
+      </th>
+      <th>
+       Frequency
+      </th>
+      <th>
+       Papers
+      </th>
+      <th>
+       How it is handled
+      </th>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        DBSCAN
+       </strong>
+      </td>
+      <td>
+       6 / 6
+      </td>
+      <td>
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       Theory is one answer; the June 2026 epsilon/MinPts problem is a separate worked numerical.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Gini / Decision Trees / CART
+       </strong>
+      </td>
+      <td>
+       6 / 6
+      </td>
+      <td>
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One theory answer; retain each different dataset calculation.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Ensemble learning
+       </strong>
+      </td>
+      <td>
+       6 / 6
+      </td>
+      <td>
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       Random Forest, Bagging/Boosting, XGBoost and classifier-combination methods are grouped in Module 3.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Regression line / Linear Regression
+       </strong>
+      </td>
+      <td>
+       6 / 6
+      </td>
+      <td>
+       May 2023; May 2024; Nov 2024 (comparison); May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       Common theory once; different regression datasets solved separately.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Classification performance metrics
+       </strong>
+      </td>
+      <td>
+       5 / 6
+      </td>
+      <td>
+       May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One formula answer plus separate confusion-matrix numericals.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Logistic Regression
+       </strong>
+      </td>
+      <td>
+       5 / 6
+      </td>
+      <td>
+       May 2023; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One consolidated answer in Module 2.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        LDA
+       </strong>
+      </td>
+      <td>
+       5 / 6
+      </td>
+      <td>
+       May 2023; May 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One consolidated answer in Module 6.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        SVM / kernel / margin
+       </strong>
+      </td>
+      <td>
+       5 / 6
+      </td>
+      <td>
+       May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One consolidated SVM answer, with SVR added from the syllabus.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Machine Learning applications
+       </strong>
+      </td>
+      <td>
+       4 / 6
+      </td>
+      <td>
+       May 2023; May 2024; Nov 2025; Jun 2026
+      </td>
+      <td>
+       Learn any five with concrete business examples.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        PCA / dimensionality reduction
+       </strong>
+      </td>
+      <td>
+       3 / 6 directly; additional general DR questions
+      </td>
+      <td>
+       Nov 2024; May 2025; Jun 2026
+      </td>
+      <td>
+       PCA and LDA are kept distinct because their objectives differ.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        MST clustering
+       </strong>
+      </td>
+      <td>
+       3 / 6
+      </td>
+      <td>
+       May 2024; Nov 2024; May 2025
+      </td>
+      <td>
+       One graph-based clustering answer.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Expectation Maximization
+       </strong>
+      </td>
+      <td>
+       3 / 6
+      </td>
+      <td>
+       May 2023; Nov 2025; Jun 2026
+      </td>
+      <td>
+       One E-step / M-step answer.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Multiclass classification
+       </strong>
+      </td>
+      <td>
+       3 / 6
+      </td>
+      <td>
+       May 2023; May 2025; Nov 2025
+      </td>
+      <td>
+       One OvR / OvO / softmax answer.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        K-fold cross-validation
+       </strong>
+      </td>
+      <td>
+       2 / 6
+      </td>
+      <td>
+       May 2024; Jun 2026
+      </td>
+      <td>
+       One answer under Ensemble Learning (Module 3).
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        SVD numerical
+       </strong>
+      </td>
+      <td>
+       1 / 6
+      </td>
+      <td>
+       May 2023
+      </td>
+      <td>
+       One worked 2 × 2 decomposition under Module 6.
+      </td>
+     </tr>
+    </table>
+    <div class="memory">
+     <strong>
+      Important rule:
+     </strong>
+     A repeated theory question is answered once. A numerical question with a different dataset is not treated as an exact repeat, so its calculation is shown separately.
+    </div>
+   </section>
+   <section class="panel" id="module-overview">
+    <h2>
+     How the six papers map to your syllabus
+    </h2>
+    <table>
+     <tr>
+      <th>
+       Module
+      </th>
+      <th>
+       Syllabus area
+      </th>
+      <th>
+       Questions covered in this pack
+      </th>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        1
+       </strong>
+      </td>
+      <td>
+       Introduction to Machine Learning
+      </td>
+      <td>
+       Definition, types, applications, issues, ML workflow, training/generalisation error, overfitting, underfitting, bias-variance.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        2
+       </strong>
+      </td>
+      <td>
+       Learning with Regression and Trees
+      </td>
+      <td>
+       Linear / multivariate / logistic regression; regression numericals and metrics; decision trees, Gini, CART; confusion matrix and classification metrics.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        3
+       </strong>
+      </td>
+      <td>
+       Ensemble Learning
+      </td>
+      <td>
+       Bagging, subagging, boosting, stumps, Random Forest, XGBoost, K-fold CV, combining classifiers.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        4
+       </strong>
+      </td>
+      <td>
+       Learning with Classification
+      </td>
+      <td>
+       SVM, margins, support vectors, hard/soft margins, optimisation, kernels, SVR, multiclass classification, email spam classification.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        5
+       </strong>
+      </td>
+      <td>
+       Learning with Clustering
+      </td>
+      <td>
+       Distance metrics, K-means, MST, EM and DBSCAN including the 2026 numerical.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        6
+       </strong>
+      </td>
+      <td>
+       Dimensionality Reduction
+      </td>
+      <td>
+       Feature selection/extraction, dimensionality reduction, PCA, LDA and SVD numerical.
+      </td>
+     </tr>
+    </table>
+    <h3>
+     Paper-to-module question crosswalk
+    </h3>
+    <div class="crosswalk-wrap">
+     <table>
+      <tr>
+       <th>
+        Syllabus module
+       </th>
+       <th>
+        May 2023
+       </th>
+       <th>
+        May 2024
+       </th>
+       <th>
+        12 Nov 2024
+       </th>
+       <th>
+        2 Jun 2025
+       </th>
+       <th>
+        10 Nov 2025
+       </th>
+       <th>
+        4 Jun 2026
+       </th>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 1
+        </strong>
+       </td>
+       <td>
+        Q1A, Q2A
+       </td>
+       <td>
+        Q1A, Q2A
+       </td>
+       <td>
+        Q1A, Q1B, Q1D, Q3A, Q3B
+       </td>
+       <td>
+        Q1A, Q2A
+       </td>
+       <td>
+        Q2A
+       </td>
+       <td>
+        Q1A, Q1C, Q2A
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 2
+        </strong>
+       </td>
+       <td>
+        Q1B, Q1E, Q2B, Q3A, Q6A
+       </td>
+       <td>
+        Q1C, Q1D, Q3A, Q4B
+       </td>
+       <td>
+        Q1C, Q2B, Q4B
+       </td>
+       <td>
+        Q1D, Q1E, Q3A, Q3B
+       </td>
+       <td>
+        Q1B, Q1D, Q1E, Q2B, Q6C
+       </td>
+       <td>
+        Q1B, Q1D, Q1E, Q2B, Q3B, Q6A
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 3
+        </strong>
+       </td>
+       <td>
+        Q4A, Q4B
+       </td>
+       <td>
+        Q2B, Q6B
+       </td>
+       <td>
+        Q4A, Q6A
+       </td>
+       <td>
+        Q4A, Q4B
+       </td>
+       <td>
+        Q4A, Q6A
+       </td>
+       <td>
+        Q3A, Q4A
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 4
+        </strong>
+       </td>
+       <td>
+        Q5A
+       </td>
+       <td>
+        Q5A, Q6A
+       </td>
+       <td>
+        Q6B, Q6C
+       </td>
+       <td>
+        Q1C, Q5A
+       </td>
+       <td>
+        Q1C, Q3A, Q4B, Q5A
+       </td>
+       <td>
+        Q6B
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 5
+        </strong>
+       </td>
+       <td>
+        Q1D, Q5B, Q6C
+       </td>
+       <td>
+        Q3B, Q4A
+       </td>
+       <td>
+        Q2A, Q5B
+       </td>
+       <td>
+        Q5B, Q6C
+       </td>
+       <td>
+        Q1A, Q5B
+       </td>
+       <td>
+        Q4B, Q5A
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Module 6
+        </strong>
+       </td>
+       <td>
+        Q1C, Q3B, Q6B
+       </td>
+       <td>
+        Q1B, Q5B
+       </td>
+       <td>
+        Q5A
+       </td>
+       <td>
+        Q2B, Q6B
+       </td>
+       <td>
+        Q3B
+       </td>
+       <td>
+        Q5B, Q6C
+       </td>
+      </tr>
+     </table>
+    </div>
+    <p class="small">
+     A question can touch more than one module. The table places it under the main syllabus topic tested; for example, email-spam detection is grouped with classification in Module 4, while its ML application aspect is also explained in Module 1.
+    </p>
+    <p class="small">
+     The syllabus image assigns 4 + 9 + 6 + 8 + 7 + 5 = 39 teaching hours. The answer pack follows this exact module order.
+    </p>
+   </section>
+   <section class="topic module" id="module1">
+    <h2>
+     Module 1 - Introduction to Machine Learning
+    </h2>
+    <span class="tag">
+     04 hours
+    </span>
+    <p class="small">
+     Machine Learning; types of ML; issues; applications; steps to develop an ML application; training and generalization error; overfitting, underfitting and bias-variance trade-off.
+    </p>
+    <section class="subtopic" id="ml">
+     <h3>
+       1.1 Machine Learning basics, algorithm selection and applications
+       <span class="q">
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       1.1.1 What is Machine Learning?
+      </h4>
+     <p>
+      Machine Learning (ML) is a branch of Artificial Intelligence that enables a computer system to learn patterns from data and make predictions or decisions without being explicitly programmed for every situation.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Machine learning process diagram" role="img" viewbox="0 0 760 125">
+       <rect fill="#eaf2fb" height="58" rx="9" stroke="#315f91" width="145" x="8" y="30">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="80" y="55">
+        Input data
+       </text>
+       <text fill="#42546b" font-size="12" text-anchor="middle" x="80" y="74">
+        Examples / features
+       </text>
+       <path d="M155 59 H205" stroke="#536b87" stroke-width="2">
+       </path>
+       <path d="M197 52 L205 59 L197 66" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <rect fill="#eaf2fb" height="58" rx="9" stroke="#315f91" width="145" x="207" y="30">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="279" y="55">
+        Learning
+       </text>
+       <text fill="#42546b" font-size="12" text-anchor="middle" x="279" y="74">
+        Train an algorithm
+       </text>
+       <path d="M354 59 H404" stroke="#536b87" stroke-width="2">
+       </path>
+       <path d="M396 52 L404 59 L396 66" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <rect fill="#eaf2fb" height="58" rx="9" stroke="#315f91" width="145" x="406" y="30">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="478" y="55">
+        Model
+       </text>
+       <text fill="#42546b" font-size="12" text-anchor="middle" x="478" y="74">
+        Learned pattern
+       </text>
+       <path d="M553 59 H603" stroke="#536b87" stroke-width="2">
+       </path>
+       <path d="M595 52 L603 59 L595 66" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="58" rx="9" stroke="#39865a" width="145" x="605" y="30">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="677" y="55">
+        Prediction
+       </text>
+       <text fill="#42546b" font-size="12" text-anchor="middle" x="677" y="74">
+        New unseen data
+       </text>
+      </svg>
+      <div class="caption">
+       Basic idea: learn from known examples, then apply the model to new examples.
+      </div>
+     </div>
+     <h4>
+       1.1.2 Business applications of ML (learn any five)
+      </h4>
+     <ol>
+      <li>
+       <strong>
+        Recommendation systems:
+       </strong>
+       Online stores and streaming platforms study user history and recommend products, movies or music.
+      </li>
+      <li>
+       <strong>
+        Fraud detection:
+       </strong>
+       Banks identify unusual card or UPI transactions using patterns in transaction amount, location, time and user behaviour.
+      </li>
+      <li>
+       <strong>
+        Customer segmentation:
+       </strong>
+       Clustering groups customers by purchasing habits so businesses can design targeted marketing campaigns.
+      </li>
+      <li>
+       <strong>
+        Sales and demand forecasting:
+       </strong>
+       Past sales, season, price and trends are used to estimate future demand and manage inventory.
+      </li>
+      <li>
+       <strong>
+        Predictive maintenance:
+       </strong>
+       Sensor readings from machines are analysed to predict failures before they occur, reducing downtime.
+      </li>
+      <li>
+       <strong>
+        Chatbots and sentiment analysis:
+       </strong>
+       NLP models understand customer messages, answer common questions and identify positive/negative feedback.
+      </li>
+      <li>
+       <strong>
+        Healthcare:
+       </strong>
+       Models assist in analysing scans, predicting risk and supporting clinical decisions.
+      </li>
+     </ol>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      Recommend - Fraud - Segment - Forecast - Maintain. Any five with a clear explanation are enough.
+     </div>
+     <h4>
+       1.1.3 How to choose the right ML algorithm?
+      </h4>
+     <p>
+      There is no single best algorithm for every problem. Select an algorithm based on:
+     </p>
+     <ol>
+      <li>
+       <strong>
+        Problem type:
+       </strong>
+       Predict a number (regression), predict a class (classification), discover groups (clustering), or reduce features (dimensionality reduction).
+      </li>
+      <li>
+       <strong>
+        Availability of labels:
+       </strong>
+       Labelled data suggests supervised learning; unlabelled data suggests unsupervised learning.
+      </li>
+      <li>
+       <strong>
+        Dataset size and quality:
+       </strong>
+       Small datasets may suit simpler models; large datasets can support more complex models. Missing values and noise must be handled.
+      </li>
+      <li>
+       <strong>
+        Relationship in data:
+       </strong>
+       Linear models suit approximately linear relationships; trees and kernel methods can capture non-linear patterns.
+      </li>
+      <li>
+       <strong>
+        Accuracy and interpretability:
+       </strong>
+       In regulated decisions, an interpretable model may be preferred over a complex black-box model.
+      </li>
+      <li>
+       <strong>
+        Training time and resources:
+       </strong>
+       Consider memory, computation, inference speed and deployment hardware.
+      </li>
+      <li>
+       <strong>
+        Validation performance:
+       </strong>
+       Compare candidates using a validation set or cross-validation and suitable evaluation metrics.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Examples:
+      </strong>
+      Linear Regression for continuous values; Logistic Regression for binary classes; K-means for grouping; Random Forest for robust classification/regression; PCA for reducing dimensions.
+     </p>
+     <h4>
+       1.1.4 Steps to design a Machine Learning application
+      </h4>
+     <ol>
+      <li>
+       <strong>
+        Define the problem:
+       </strong>
+       Clearly identify the objective, target variable and success measure.
+      </li>
+      <li>
+       <strong>
+        Collect data:
+       </strong>
+       Obtain relevant, representative and legally usable data.
+      </li>
+      <li>
+       <strong>
+        Prepare data:
+       </strong>
+       Remove duplicates, handle missing values/outliers, encode categories and scale features when required.
+      </li>
+      <li>
+       <strong>
+        Explore and select features:
+       </strong>
+       Understand distributions and relationships; select useful input variables.
+      </li>
+      <li>
+       <strong>
+        Split data:
+       </strong>
+       Create training, validation and test sets to measure performance on unseen data.
+      </li>
+      <li>
+       <strong>
+        Select and train model:
+       </strong>
+       Choose a suitable algorithm and fit it using training data.
+      </li>
+      <li>
+       <strong>
+        Tune and evaluate:
+       </strong>
+       Adjust hyperparameters using validation/cross-validation; report suitable metrics on test data.
+      </li>
+      <li>
+       <strong>
+        Deploy and monitor:
+       </strong>
+       Integrate the model into the application and monitor accuracy, data drift and fairness. Retrain when needed.
+      </li>
+     </ol>
+     <div class="memory">
+      <strong>
+       Memory sequence:
+      </strong>
+      Problem - Data - Clean - Features - Split - Train - Evaluate - Deploy/Monitor.
+     </div>
+     <h4>
+       1.1.5 Issues in Machine Learning
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Insufficient or unrepresentative data:
+       </strong>
+       The model cannot learn all real-world cases.
+      </li>
+      <li>
+       <strong>
+        Poor data quality:
+       </strong>
+       Missing values, wrong labels, duplicates, noise and outliers reduce performance.
+      </li>
+      <li>
+       <strong>
+        Irrelevant features / high dimensionality:
+       </strong>
+       Too many or useless inputs increase complexity and may cause overfitting.
+      </li>
+      <li>
+       <strong>
+        Overfitting:
+       </strong>
+       Model memorises training data and performs poorly on new data.
+      </li>
+      <li>
+       <strong>
+        Underfitting:
+       </strong>
+       Model is too simple to capture the actual pattern.
+      </li>
+      <li>
+       <strong>
+        Bias and variance:
+       </strong>
+       High bias causes systematic errors; high variance causes sensitivity to training samples.
+      </li>
+      <li>
+       <strong>
+        Class imbalance:
+       </strong>
+       A model may favour the majority class and have poor recall for minority cases.
+      </li>
+      <li>
+       <strong>
+        Data leakage:
+       </strong>
+       Information from test/future data accidentally enters training, giving misleadingly high scores.
+      </li>
+      <li>
+       <strong>
+        Compute and deployment:
+       </strong>
+       Large models can require high memory, time and power.
+      </li>
+      <li>
+       <strong>
+        Ethics and maintenance:
+       </strong>
+       Bias, privacy, explainability and changes in real-world data (concept drift) must be managed.
+      </li>
+     </ul>
+     <h4>
+       1.1.6 Four common types of Machine Learning
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Type
+       </th>
+       <th>
+        Training information
+       </th>
+       <th>
+        What it learns
+       </th>
+       <th>
+        Example
+       </th>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Supervised
+        </strong>
+       </td>
+       <td>
+        Labelled input-output examples
+       </td>
+       <td>
+        Predicts a target; classification or regression
+       </td>
+       <td>
+        Spam detection, house-price prediction
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Unsupervised
+        </strong>
+       </td>
+       <td>
+        Unlabelled data
+       </td>
+       <td>
+        Finds hidden groups or structure
+       </td>
+       <td>
+        K-means customer clustering, PCA
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Semi-supervised
+        </strong>
+       </td>
+       <td>
+        A small labelled set plus a large unlabelled set
+       </td>
+       <td>
+        Uses both types of data to improve learning
+       </td>
+       <td>
+        Image classification when only some images are labelled
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Reinforcement
+        </strong>
+       </td>
+       <td>
+        Feedback as rewards or penalties from an environment
+       </td>
+       <td>
+        An agent learns actions that maximise long-term reward
+       </td>
+       <td>
+        Game-playing agent, robot navigation
+       </td>
+      </tr>
+     </table>
+     <div class="memory">
+      <strong>
+       Remember:
+      </strong>
+      Supervised = labels; Unsupervised = no labels; Semi-supervised = some labels; Reinforcement = reward and penalty.
+     </div>
+     <table>
+      <tr>
+       <th>
+        Supervised learning
+       </th>
+       <th>
+        Unsupervised learning
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Uses labelled data (input with correct output).
+       </td>
+       <td>
+        Uses unlabelled data (no target labels).
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Learns a mapping from input to known target.
+       </td>
+       <td>
+        Finds hidden structure or patterns in data.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Main tasks: classification and regression.
+       </td>
+       <td>
+        Main tasks: clustering and dimensionality reduction.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Examples: Linear Regression, Logistic Regression, SVM, Random Forest.
+       </td>
+       <td>
+        Examples: K-means, DBSCAN, PCA, hierarchical clustering.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Performance can be measured against true labels.
+       </td>
+       <td>
+        Evaluation may use internal cluster measures or domain judgement.
+       </td>
+      </tr>
+     </table>
+     <h4>
+       1.1.7 Training error, generalization error, overfitting, underfitting and bias-variance trade-off
+      </h4>
+     <p>
+      <strong>
+       Training error
+      </strong>
+      is the error measured on data used to fit the model.
+      <strong>
+       Generalization error
+      </strong>
+      is the error on new, unseen data; test-set error is an estimate of it.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Underfitting, good fit and overfitting diagram" role="img" viewbox="0 0 700 270">
+       <line stroke="#26384e" x1="45" x2="670" y1="225" y2="225">
+       </line>
+       <line stroke="#26384e" x1="45" x2="45" y1="225" y2="20">
+       </line>
+       <text fill="#26384e" font-size="13" text-anchor="middle" x="350" y="258">
+        Model complexity increases →
+       </text>
+       <text fill="#26384e" font-size="13" text-anchor="middle" transform="rotate(-90 15 115)" x="15" y="115">
+        Error
+       </text>
+       <path d="M60 65 C160 80 245 140 330 165 S500 185 650 190" fill="none" stroke="#3678b6" stroke-width="3">
+       </path>
+       <path d="M60 30 C180 45 240 100 330 145 S500 175 650 200" fill="none" stroke="#b36d32" stroke-width="3">
+       </path>
+       <path d="M60 38 C160 35 245 45 330 75 S500 160 650 205" fill="none" stroke="#39865a" stroke-dasharray="5 4" stroke-width="2">
+       </path>
+       <text fill="#244a78" font-size="12" x="115" y="47">
+        Underfit
+       </text>
+       <text fill="#39865a" font-size="12" x="340" y="130">
+        Best balance
+       </text>
+       <text fill="#b36d32" font-size="12" x="565" y="190">
+        Overfit region
+       </text>
+       <text fill="#b36d32" font-size="11" x="520" y="35">
+        Generalization error
+       </text>
+       <text fill="#3678b6" font-size="11" x="520" y="50">
+        Training error
+       </text>
+      </svg>
+      <div class="caption">
+       Conceptual curves: training error usually falls as complexity grows; generalization error often falls then rises.
+      </div>
+     </div>
+     <ul>
+      <li>
+       <strong>
+        Underfitting:
+       </strong>
+       Model too simple; high training and test error; associated with high bias.
+      </li>
+      <li>
+       <strong>
+        Good fit:
+       </strong>
+       Learns important patterns and performs similarly on training and unseen data.
+      </li>
+      <li>
+       <strong>
+        Overfitting:
+       </strong>
+       Learns noise/details in training data; very low training error but high test error; associated with high variance.
+      </li>
+      <li>
+       <strong>
+        Bias-variance trade-off:
+       </strong>
+       Increasing complexity can reduce bias but increase variance. Choose complexity giving low validation/test error.
+      </li>
+     </ul>
+     <div class="eq">
+      Expected test error = Bias² + Variance + Irreducible noise
+     </div>
+     <p>
+      Bias is the systematic error from overly simple assumptions; variance is the error from being sensitive to the particular training sample; irreducible noise is randomness in the data that no model can remove. A good model keeps bias and variance low at the same time.
+     </p>
+     <p>
+      <strong>
+       Ways to control:
+      </strong>
+      use more representative data, cross-validation, regularization, feature selection, pruning, early stopping, dropout (for neural networks), or reduce model complexity.
+     </p>
+     <h4>
+       1.1.8 Bias-variance trade-off - easy example
+      </h4>
+     <p>
+      Suppose we predict exam marks from study hours. A very simple straight-line model may miss a curved relationship (high bias / underfitting). A very complex curve may pass through every training point, including random noise (high variance / overfitting). A model of suitable complexity captures the real trend and performs well on new students.
+     </p>
+    </section>
+   <section class="panel recap" id="recap1">
+    <h3>
+      Module 1 - 60-second recap: Introduction
+    </h3>
+    <ul>
+     <li>
+      ML = learning patterns from data without being explicitly programmed for every case.
+     </li>
+     <li>
+      Four types: supervised (labels), unsupervised (no labels), semi-supervised (some labels), reinforcement (reward/penalty).
+     </li>
+     <li>
+      Workflow: define problem → collect → clean → choose features → split → train → evaluate → deploy and monitor.
+     </li>
+     <li>
+      Common failure sources: bad or unrepresentative data, irrelevant features, overfitting, underfitting, imbalance, leakage and drift.
+     </li>
+     <li>
+      Expected test error = bias² + variance + irreducible noise; control it with more data, cross-validation, regularization and pruning.
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="topic module" id="module2">
+    <h2>
+     Module 2 - Learning with Regression and Trees
+    </h2>
+    <span class="tag">
+     09 hours
+    </span>
+    <p class="small">
+     Linear and multivariate linear regression; Logistic Regression; Decision Trees; Gini Index; CART; confusion matrix and classification performance metrics; regression performance measures.
+    </p>
+    <section class="subtopic" id="regression">
+     <h3>
+       2.1 Regression, scatter plot, best-fit line and numericals
+       <span class="q">
+       May 2023; May 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       2.1.1 Regression line, scatter plot, prediction error and best-fitting line
+      </h4>
+     <p>
+      <strong>
+       Regression
+      </strong>
+      predicts a continuous numerical output from one or more input variables. In simple linear regression, one input x is used to predict y.
+     </p>
+     <div class="eq center">
+      ŷ = a + bx    where a = intercept and b = slope
+     </div>
+     <ul>
+      <li>
+       <strong>
+        Scatter plot:
+       </strong>
+       Graph with input x on the horizontal axis and observed output y on the vertical axis. Each data pair is shown as a point.
+      </li>
+      <li>
+       <strong>
+        Regression line:
+       </strong>
+       A straight line that summarises the relationship between x and y.
+      </li>
+      <li>
+       <strong>
+        Prediction:
+       </strong>
+       For a value x, the predicted output is ŷ = a + bx.
+      </li>
+      <li>
+       <strong>
+        Prediction error / residual:
+       </strong>
+       Difference between actual and predicted value: e = y - ŷ. A positive residual means the actual value is above the line.
+      </li>
+      <li>
+       <strong>
+        Best-fitting line:
+       </strong>
+       The line chosen to minimise the sum of squared residuals (least squares).
+      </li>
+     </ul>
+     <div class="diagram">
+      <svg aria-label="Scatter plot with best fitting line and residual" role="img" viewbox="0 0 650 290">
+       <line stroke="#25364b" stroke-width="2" x1="55" x2="610" y1="235" y2="235">
+       </line>
+       <line stroke="#25364b" stroke-width="2" x1="55" x2="55" y1="235" y2="20">
+       </line>
+       <text fill="#25364b" font-size="13" x="620" y="240">
+        x
+       </text>
+       <text fill="#25364b" font-size="13" x="44" y="18">
+        y
+       </text>
+       <line stroke="#2d6caa" stroke-width="3" x1="75" x2="575" y1="205" y2="55">
+       </line>
+       <g fill="#25364b">
+        <circle cx="105" cy="194" r="5">
+        </circle>
+        <circle cx="170" cy="177" r="5">
+        </circle>
+        <circle cx="235" cy="164" r="5">
+        </circle>
+        <circle cx="300" cy="142" r="5">
+        </circle>
+        <circle cx="365" cy="135" r="5">
+        </circle>
+        <circle cx="430" cy="104" r="5">
+        </circle>
+        <circle cx="510" cy="93" r="5">
+        </circle>
+       </g>
+       <path d="M300 142 L300 166" stroke="#c45a43" stroke-dasharray="4 3" stroke-width="2">
+       </path>
+       <text fill="#a54435" font-size="12" x="315" y="157">
+        residual (actual - predicted)
+       </text>
+       <text fill="#2d6caa" font-size="12" x="375" y="65">
+        best-fit line
+       </text>
+      </svg>
+      <div class="caption">
+       A best-fit line follows the overall trend; the vertical distance from a point to the line is its residual.
+      </div>
+     </div>
+     <h4>
+       2.1.2 Least-squares formulas
+      </h4>
+     <div class="eq">
+      b = [nΣxy - (Σx)(Σy)] / [nΣx² - (Σx)²]
+     </div>
+     <div class="eq">
+      a = [Σy - bΣx] / n    therefore   ŷ = a + bx
+     </div>
+     <h4>
+       2.1.3 Worked numerical - May 2024 paper (time and mass)
+      </h4>
+     <p>
+      Given x = time in seconds and y = mass in grams:
+     </p>
+     <table>
+      <tr>
+       <th>
+        x
+       </th>
+       <td>
+        5
+       </td>
+       <td>
+        7
+       </td>
+       <td>
+        12
+       </td>
+       <td>
+        16
+       </td>
+       <td>
+        20
+       </td>
+      </tr>
+      <tr>
+       <th>
+        y
+       </th>
+       <td>
+        40
+       </td>
+       <td>
+        120
+       </td>
+       <td>
+        180
+       </td>
+       <td>
+        210
+       </td>
+       <td>
+        240
+       </td>
+      </tr>
+     </table>
+     <p>
+      Prepare the totals:
+     </p>
+     <table>
+      <tr>
+       <th>
+        x
+       </th>
+       <th>
+        y
+       </th>
+       <th>
+        x²
+       </th>
+       <th>
+        xy
+       </th>
+      </tr>
+      <tr>
+       <td>
+        5
+       </td>
+       <td>
+        40
+       </td>
+       <td>
+        25
+       </td>
+       <td>
+        200
+       </td>
+      </tr>
+      <tr>
+       <td>
+        7
+       </td>
+       <td>
+        120
+       </td>
+       <td>
+        49
+       </td>
+       <td>
+        840
+       </td>
+      </tr>
+      <tr>
+       <td>
+        12
+       </td>
+       <td>
+        180
+       </td>
+       <td>
+        144
+       </td>
+       <td>
+        2160
+       </td>
+      </tr>
+      <tr>
+       <td>
+        16
+       </td>
+       <td>
+        210
+       </td>
+       <td>
+        256
+       </td>
+       <td>
+        3360
+       </td>
+      </tr>
+      <tr>
+       <td>
+        20
+       </td>
+       <td>
+        240
+       </td>
+       <td>
+        400
+       </td>
+       <td>
+        4800
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Σ
+       </th>
+       <th>
+        790
+       </th>
+       <th>
+        874
+       </th>
+       <th>
+        11360
+       </th>
+      </tr>
+     </table>
+     <p>
+      Also Σx = 60 and n = 5.
+     </p>
+     <div class="eq">
+      b = [5(11360) - 60(790)] / [5(874) - 60²] = 9400 / 770 = 12.2078
+     </div>
+     <div class="eq">
+      a = [790 - (12.2078)(60)] / 5 = 11.5065
+     </div>
+     <div class="callout">
+      <strong>
+       Regression line:
+      </strong>
+      <span class="eq">
+       ŷ = 11.506 + 12.208x
+      </span>
+      For example, at x = 10 seconds, predicted mass = 11.506 + 12.208(10) ≈ 133.59 grams.
+     </div>
+     <h4>
+       2.1.4 Regression evaluation measures
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        MAE:
+       </strong>
+       Average absolute prediction error. Easy to interpret and less sensitive to large errors than MSE.
+      </li>
+      <li>
+       <strong>
+        MSE:
+       </strong>
+       Average of squared errors; penalises large errors strongly.
+      </li>
+      <li>
+       <strong>
+        RMSE:
+       </strong>
+       Square root of MSE; has the same unit as the target.
+      </li>
+      <li>
+       <strong>
+        R² (coefficient of determination):
+       </strong>
+       Fraction of target variation explained by the model. Closer to 1 usually indicates better fit.
+      </li>
+     </ul>
+     <div class="eq">
+      MAE = (1/n)Σ|y - ŷ|   |   MSE = (1/n)Σ(y - ŷ)²
+     </div>
+     <div class="eq">
+      RMSE = √MSE   |   R² = 1 - [Σ(y - ŷ)² / Σ(y - ȳ)²]
+     </div>
+     <p>
+      For the May 2024 dataset and fitted line above: MAE ≈ 19.283, MSE ≈ 465.870, RMSE ≈ 21.584 and R² ≈ 0.9079. (Values are rounded.)
+     </p>
+     <h4>
+       2.1.5 Worked numerical - 2025 paper (monthly expenditure)
+      </h4>
+     <p>
+      Given month x = 1, 2, 3, 4, 5 and expenditure y = 12, 19, 29, 37, 45 (thousand):
+     </p>
+     <table>
+      <tr>
+       <th>
+        x
+       </th>
+       <th>
+        y
+       </th>
+       <th>
+        x²
+       </th>
+       <th>
+        xy
+       </th>
+      </tr>
+      <tr>
+       <td>
+        1
+       </td>
+       <td>
+        12
+       </td>
+       <td>
+        1
+       </td>
+       <td>
+        12
+       </td>
+      </tr>
+      <tr>
+       <td>
+        2
+       </td>
+       <td>
+        19
+       </td>
+       <td>
+        4
+       </td>
+       <td>
+        38
+       </td>
+      </tr>
+      <tr>
+       <td>
+        3
+       </td>
+       <td>
+        29
+       </td>
+       <td>
+        9
+       </td>
+       <td>
+        87
+       </td>
+      </tr>
+      <tr>
+       <td>
+        4
+       </td>
+       <td>
+        37
+       </td>
+       <td>
+        16
+       </td>
+       <td>
+        148
+       </td>
+      </tr>
+      <tr>
+       <td>
+        5
+       </td>
+       <td>
+        45
+       </td>
+       <td>
+        25
+       </td>
+       <td>
+        225
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Σ
+       </th>
+       <th>
+        142
+       </th>
+       <th>
+        55
+       </th>
+       <th>
+        510
+       </th>
+      </tr>
+     </table>
+     <p>
+      Σx = 15, n = 5.
+     </p>
+     <div class="eq">
+      b = [5(510) - 15(142)] / [5(55) - 15²] = 420/50 = 8.4
+     </div>
+     <div class="eq">
+      a = [142 - 8.4(15)] / 5 = 3.2
+     </div>
+     <div class="callout">
+      <strong>
+       Regression line:
+      </strong>
+      ŷ = 3.2 + 8.4x. At month 6: ŷ = 3.2 + 8.4(6) =
+      <strong>
+       53.6 thousand
+      </strong>
+      .
+     </div>
+     <h4>
+       2.1.6 Multivariate Linear Regression
+      </h4>
+     <p>
+      Multivariate (multiple) linear regression predicts one continuous dependent variable using two or more independent variables.
+     </p>
+     <div class="eq">
+      y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ + ε
+     </div>
+     <ol>
+      <li>
+       Identify the target y and input features x₁, x₂, ... xₚ.
+      </li>
+      <li>
+       Collect and clean data; encode categorical variables and scale where useful.
+      </li>
+      <li>
+       Estimate coefficients β using least squares, minimising the sum of squared residuals.
+      </li>
+      <li>
+       Interpret each coefficient as the expected change in y for a one-unit change in that feature, keeping other features fixed.
+      </li>
+      <li>
+       Evaluate on unseen data using MAE, MSE, RMSE and R².
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Example:
+      </strong>
+      House price may be predicted from area, number of bedrooms, age and location score. It is useful when several factors jointly influence a numerical outcome.
+     </p>
+     <h4>
+       2.1.7 Linear Regression - short note
+      </h4>
+     <p>
+      Linear regression models the relationship between an independent variable and a continuous dependent variable using a straight line. It estimates parameters by least squares, then uses the fitted equation for prediction. Advantages: simple, fast and interpretable. Limitations: sensitive to outliers, assumes a linear relationship and may perform poorly when important non-linear patterns are present.
+     </p>
+     <h4>
+       2.1.8 Worked numerical - June 2025 paper (midterm score to final score)
+      </h4>
+     <p>
+      The paper gives 12 students' midterm marks (X) and final marks (Y). Predict the final mark when X = 86.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Midterm X
+       </th>
+       <td>
+        72
+       </td>
+       <td>
+        50
+       </td>
+       <td>
+        81
+       </td>
+       <td>
+        74
+       </td>
+       <td>
+        94
+       </td>
+       <td>
+        86
+       </td>
+       <td>
+        59
+       </td>
+       <td>
+        83
+       </td>
+       <td>
+        86
+       </td>
+       <td>
+        33
+       </td>
+       <td>
+        88
+       </td>
+       <td>
+        81
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Final Y
+       </th>
+       <td>
+        84
+       </td>
+       <td>
+        53
+       </td>
+       <td>
+        77
+       </td>
+       <td>
+        78
+       </td>
+       <td>
+        90
+       </td>
+       <td>
+        75
+       </td>
+       <td>
+        49
+       </td>
+       <td>
+        79
+       </td>
+       <td>
+        77
+       </td>
+       <td>
+        52
+       </td>
+       <td>
+        74
+       </td>
+       <td>
+        90
+       </td>
+      </tr>
+     </table>
+     <p>
+      <strong>
+       Step 1 - calculate totals:
+      </strong>
+      n = 12, ΣX = 887, ΣY = 878, ΣX² = 69,113, ΣXY = 67,205.
+     </p>
+     <p>
+      <strong>
+       Step 2 - calculate slope:
+      </strong>
+     </p>
+     <div class="eq">
+      b = [nΣXY - ΣXΣY] / [nΣX² - (ΣX)²]
+     </div>
+     <div class="eq">
+      b = [12(67,205) - (887)(878)] / [12(69,113) - 887²] = 27,674 / 42,587 = 0.64982
+     </div>
+     <p>
+      <strong>
+       Step 3 - calculate intercept:
+      </strong>
+     </p>
+     <div class="eq">
+      a = (ΣY - bΣX)/n = [878 - (0.64982)(887)]/12 = 25.13394
+     </div>
+     <p>
+      <strong>
+       Step 4 - write the regression line and substitute X = 86:
+      </strong>
+     </p>
+     <div class="callout">
+      <strong>
+       Regression line:
+      </strong>
+      Ŷ = 25.13394 + 0.64982X
+      <br/>
+      <strong>
+       Predicted final mark:
+      </strong>
+      Ŷ = 25.13394 + 0.64982(86) =
+      <strong>
+       81.02 marks (approximately)
+      </strong>
+      .
+     </div>
+     <h4>
+       2.1.9 Regression vs Classification
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Regression
+       </th>
+       <th>
+        Classification
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Predicts a continuous numerical value.
+       </td>
+       <td>
+        Predicts a discrete class/label.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Output may be any real number.
+       </td>
+       <td>
+        Output is a class, or probabilities for classes.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Examples: house price, temperature, exam score.
+       </td>
+       <td>
+        Examples: spam/ham, fraud/not fraud, disease/no disease.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Common algorithms: Linear Regression, Regression Tree, SVR.
+       </td>
+       <td>
+        Common algorithms: Logistic Regression, Decision Tree, SVM, Naive Bayes.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Common metrics: MAE, MSE, RMSE, R².
+       </td>
+       <td>
+        Common metrics: Accuracy, Precision, Recall, F1, ROC-AUC.
+       </td>
+      </tr>
+     </table>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      Regression predicts a number; classification predicts a category.
+     </div>
+    </section>
+    <section class="subtopic" id="logistic">
+     <h3>
+       2.2 Logistic Regression
+       <span class="q">
+       May 2023; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <p>
+      Logistic Regression is a supervised classification algorithm. Although its name contains “regression”, it predicts the probability of a class, commonly Yes/No or 0/1.
+     </p>
+     <h4>
+       2.2.1 Sigmoid function
+      </h4>
+     <p>
+      First calculate a linear score z, then convert it to a probability using the sigmoid (logistic) function:
+     </p>
+     <div class="eq">
+      z = β₀ + β₁x₁ + ... + βₚxₚ
+     </div>
+     <div class="eq">
+      P(y=1|x) = 1 / (1 + e⁻ᶻ)
+     </div>
+     <p>
+      The output lies between 0 and 1. A threshold (commonly 0.5) converts the probability into a class: probability ≥ threshold → class 1; otherwise class 0.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Sigmoid curve" role="img" viewbox="0 0 620 225">
+       <line stroke="#26384e" x1="45" x2="590" y1="185" y2="185">
+       </line>
+       <line stroke="#26384e" x1="310" x2="310" y1="200" y2="18">
+       </line>
+       <path d="M60 180 C170 180 230 174 270 145 C295 125 300 93 310 90 C320 87 325 55 350 43 C390 23 470 20 570 20" fill="none" stroke="#3678b6" stroke-width="3">
+       </path>
+       <text fill="#26384e" font-size="12" x="575" y="200">
+        z
+       </text>
+       <text fill="#26384e" font-size="12" x="320" y="17">
+        Probability
+       </text>
+       <text fill="#596579" font-size="11" x="28" y="183">
+        0
+       </text>
+       <text fill="#596579" font-size="11" x="28" y="28">
+        1
+       </text>
+       <text fill="#596579" font-size="11" x="320" y="106">
+        0.5
+       </text>
+       <line stroke="#bd7541" stroke-dasharray="5 4" x1="45" x2="590" y1="90" y2="90">
+       </line>
+       <text fill="#a36620" font-size="11" x="500" y="82">
+        threshold 0.5
+       </text>
+      </svg>
+      <div class="caption">
+       The sigmoid maps any real-valued score to a probability between 0 and 1.
+      </div>
+     </div>
+     <h4>
+       2.2.2 Working steps
+      </h4>
+     <ol>
+      <li>
+       Collect labelled data and prepare/encode features.
+      </li>
+      <li>
+       Calculate a linear combination of input features.
+      </li>
+      <li>
+       Apply the sigmoid function to obtain the probability of the positive class.
+      </li>
+      <li>
+       Learn coefficients by minimising log-loss (cross-entropy), commonly using an optimisation method such as gradient descent.
+      </li>
+      <li>
+       Choose a classification threshold and predict the class.
+      </li>
+      <li>
+       Evaluate using confusion matrix, accuracy, precision, recall, F1 and ROC-AUC as suitable.
+      </li>
+     </ol>
+     <h4>
+       2.2.3 Advantages and limitations
+      </h4>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      simple, fast, interpretable coefficients, gives class probabilities and works well when the log-odds are approximately linear in features.
+      <strong>
+       Limitations:
+      </strong>
+      a linear decision boundary unless features are engineered; may underfit complex relationships; affected by multicollinearity and requires suitable feature preparation.
+     </p>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      spam/not-spam, churn/no churn, disease/no disease, loan default prediction and click-through prediction.
+     </p>
+     <h4>
+       2.2.4 Linear Regression vs Logistic Regression
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Linear Regression
+       </th>
+       <th>
+        Logistic Regression
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Predicts continuous numerical values.
+       </td>
+       <td>
+        Predicts class probability / class.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Output can be any real number.
+       </td>
+       <td>
+        Sigmoid output is between 0 and 1 for binary classification.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Fits a line/linear function to the target.
+       </td>
+       <td>
+        Fits a linear function to log-odds and applies sigmoid.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Common loss: squared error.
+       </td>
+       <td>
+        Common loss: log-loss / cross-entropy.
+       </td>
+      </tr>
+     </table>
+    </section>
+    <section class="subtopic" id="gini">
+     <h3>
+       2.3 Entropy, Gini Index and decision-tree numericals
+       <span class="q">
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       2.3.1 Entropy and Gini Index
+      </h4>
+     <p>
+      Both measure impurity (mixing of classes) in a dataset or decision-tree node. A pure node has impurity 0. A node with a balanced mixture has higher impurity.
+     </p>
+     <div class="eq">
+      Gini(D) = 1 - Σ pᵢ²
+     </div>
+     <div class="eq">
+      Entropy(D) = -Σ pᵢ log₂(pᵢ)
+     </div>
+     <p>
+      Here pᵢ is the proportion of records belonging to class i. For a split into child groups:
+     </p>
+     <div class="eq">
+      Weighted Gini after split = Σ (|Dⱼ|/|D|) × Gini(Dⱼ)
+     </div>
+     <div class="eq">
+      Gini decrease = Gini(parent) - weighted Gini(children)
+     </div>
+     <div class="eq">
+      Information Gain = Entropy(parent) - Σ (|Dⱼ|/|D|) × Entropy(Dⱼ)
+     </div>
+     <p>
+      Choose the feature with the
+      <strong>
+       lowest weighted Gini
+      </strong>
+      (equivalently, greatest Gini decrease). Entropy-based trees commonly choose the split with greatest information gain.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Gini
+       </th>
+       <th>
+        Entropy
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Uses squared class probabilities.
+       </td>
+       <td>
+        Uses logarithm of class probabilities.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Computationally simpler.
+       </td>
+       <td>
+        More computationally expensive due to logarithms.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Lower is purer; 0 for a pure node.
+       </td>
+       <td>
+        Lower is purer; 0 for a pure node.
+       </td>
+      </tr>
+     </table>
+     <h4>
+       2.3.2 Worked dataset - May 2023 (Profit: Up / Down)
+      </h4>
+     <p>
+      There are 10 records: 5 Down and 5 Up.
+     </p>
+     <div class="eq">
+      Parent Gini = 1 - (5/10)² - (5/10)² = 0.5
+     </div>
+     <p>
+      Calculate weighted Gini for each feature:
+     </p>
+     <table>
+      <tr>
+       <th>
+        Feature
+       </th>
+       <th>
+        Groups and class counts
+       </th>
+       <th>
+        Weighted Gini
+       </th>
+       <th>
+        Gini decrease
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Age
+       </td>
+       <td>
+        Old: 3 Down, 0 Up (Gini 0); Mid: 2 Down, 2 Up (0.5); New: 0 Down, 3 Up (0)
+       </td>
+       <td>
+        (3/10)(0)+(4/10)(0.5)+(3/10)(0) =
+        <strong>
+         0.20
+        </strong>
+       </td>
+       <td>
+        <strong>
+         0.30
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Competition
+       </td>
+       <td>
+        Yes: 3 Down, 1 Up (0.375); No: 2 Down, 4 Up (0.444)
+       </td>
+       <td>
+        (4/10)(0.375)+(6/10)(0.444) = 0.417
+       </td>
+       <td>
+        0.083
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Type
+       </td>
+       <td>
+        Software: 3 Down, 3 Up (0.5); Hardware: 2 Down, 2 Up (0.5)
+       </td>
+       <td>
+        0.50
+       </td>
+       <td>
+        0.00
+       </td>
+      </tr>
+     </table>
+     <div class="callout">
+      <strong>
+       Root node = Age
+      </strong>
+      , because it has the lowest weighted Gini (0.20) and highest Gini decrease (0.30).
+     </div>
+     <div class="diagram">
+      <svg aria-label="Decision tree for profit data" role="img" viewbox="0 0 650 250">
+       <rect fill="#eaf2fb" height="42" rx="8" stroke="#315f91" width="120" x="265" y="8">
+       </rect>
+       <text fill="#172b45" font-size="16" text-anchor="middle" x="325" y="34">
+        Age
+       </text>
+       <path d="M290 50 L120 105 M325 50 L325 105 M360 50 L530 105" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="42" rx="8" stroke="#39865a" width="116" x="62" y="105">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="120" y="131">
+        Old: Down
+       </text>
+       <rect fill="#fff5df" height="42" rx="8" stroke="#cc8d21" width="116" x="267" y="105">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="325" y="131">
+        Mid
+       </text>
+       <rect fill="#eaf6ef" height="42" rx="8" stroke="#39865a" width="116" x="472" y="105">
+       </rect>
+       <text fill="#172b45" font-size="15" text-anchor="middle" x="530" y="131">
+        New: Up
+       </text>
+       <path d="M325 147 L325 180 M295 180 L230 205 M355 180 L420 205" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#eaf2fb" height="38" rx="8" stroke="#315f91" width="140" x="160" y="205">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="230" y="229">
+        Competition = Yes
+       </text>
+       <rect fill="#eaf2fb" height="38" rx="8" stroke="#315f91" width="140" x="350" y="205">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="420" y="229">
+        Competition = No
+       </text>
+       <text fill="#596579" font-size="11" text-anchor="middle" x="230" y="198">
+        Down
+       </text>
+       <text fill="#596579" font-size="11" text-anchor="middle" x="420" y="198">
+        Up
+       </text>
+      </svg>
+      <div class="caption">
+       For the Mid subset, Competition separates the records perfectly: Yes → Down; No → Up.
+      </div>
+     </div>
+     <h4>
+       2.3.3 Worked dataset - December 2024 (Is the car stolen?)
+      </h4>
+     <p>
+      Target has 5 Yes and 5 No, so parent Gini = 1 - (5/10)² - (5/10)² = 0.5.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Feature
+       </th>
+       <th>
+        Group class counts
+       </th>
+       <th>
+        Weighted Gini
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Colour
+       </td>
+       <td>
+        Red: 3 Yes, 2 No (0.48); Yellow: 2 Yes, 3 No (0.48)
+       </td>
+       <td>
+        <strong>
+         0.48
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Type
+       </td>
+       <td>
+        Sports: 4 Yes, 2 No (4/9 = 0.4444); SUV: 1 Yes, 3 No (3/8 = 0.375)
+       </td>
+       <td>
+        <strong>
+         (6/10)(0.4444)+(4/10)(0.375)=0.4167
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Origin
+       </td>
+       <td>
+        Domestic: 2 Yes, 3 No (0.48); Imported: 3 Yes, 2 No (0.48)
+       </td>
+       <td>
+        <strong>
+         0.48
+        </strong>
+       </td>
+      </tr>
+     </table>
+     <div class="callout">
+      <strong>
+       Root = Type
+      </strong>
+      because Type gives the smallest weighted Gini, 0.4167.
+     </div>
+     <p>
+      <strong>
+       Next splits:
+      </strong>
+      For the Sports subset, splitting by Origin gives Imported = Yes (both imported sports cars are Yes) and Domestic = mixed (2 Yes, 2 No). For the SUV subset, Colour and Origin give the same weighted Gini (1/3); either is a valid next split. The SUV/Yellow/Imported and Sports/Domestic/Red groups contain identical feature values with conflicting labels, so no tree using only the supplied attributes can perfectly classify every row. At such a leaf, assign the majority class (and note the tie if equal).
+     </p>
+     <div class="diagram">
+      <svg aria-label="Top levels of car stolen decision tree" role="img" viewbox="0 0 660 205">
+       <rect fill="#eaf2fb" height="40" rx="8" stroke="#315f91" width="120" x="270" y="5">
+       </rect>
+       <text font-size="15" text-anchor="middle" x="330" y="30">
+        Type
+       </text>
+       <path d="M300 45 L155 92 M360 45 L505 92" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#fff5df" height="40" rx="8" stroke="#cc8d21" width="126" x="92" y="92">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="155" y="117">
+        Sports
+       </text>
+       <rect fill="#fff5df" height="40" rx="8" stroke="#cc8d21" width="126" x="442" y="92">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="505" y="117">
+        SUV
+       </text>
+       <path d="M155 132 L155 160 M505 132 L505 160" stroke="#526780" stroke-width="2">
+       </path>
+       <text font-size="12" text-anchor="middle" x="155" y="180">
+        Split by Origin next
+       </text>
+       <text font-size="12" text-anchor="middle" x="505" y="180">
+        Split by Colour or Origin
+       </text>
+      </svg>
+      <div class="caption">
+       Root is unambiguous. Further splits have ties because some rows share identical attributes but have different target labels.
+      </div>
+     </div>
+     <h4>
+       2.3.4 Worked dataset - May 2024 (Emotion: S / H)
+      </h4>
+     <p>
+      There are 9 records: 4 S and 5 H.
+     </p>
+     <div class="eq">
+      Parent Gini = 1 - (4/9)² - (5/9)² = 40/81 ≈ 0.4938
+     </div>
+     <table>
+      <tr>
+       <th>
+        Feature
+       </th>
+       <th>
+        Groups
+       </th>
+       <th>
+        Weighted Gini
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Colour
+       </td>
+       <td>
+        G: 3 S, 0 H (0); B: 1 S, 1 H (0.5); R: 0 S, 4 H (0)
+       </td>
+       <td>
+        (3/9)(0)+(2/9)(0.5)+(4/9)(0) =
+        <strong>
+         0.1111
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Wig
+       </td>
+       <td>
+        Yes: 1 S, 1 H (0.5); No: 3 S, 4 H (24/49 ≈ 0.4898)
+       </td>
+       <td>
+        ≈ 0.4921
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Number of ears
+       </td>
+       <td>
+        2: 4 S, 4 H (0.5); 3: 0 S, 1 H (0)
+       </td>
+       <td>
+        (8/9)(0.5)+(1/9)(0) = 0.4444
+       </td>
+      </tr>
+     </table>
+     <div class="callout">
+      <strong>
+       Root node = Colour
+      </strong>
+      , since it has the smallest weighted Gini (0.1111). Green predicts S; Red predicts H; Blue has one S and one H, so it remains a tie and can be labelled using the chosen tie-breaking/majority rule.
+     </div>
+     <h4>
+       2.3.5 How to handle overfitting in decision trees?
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Pre-pruning:
+       </strong>
+       stop early using maximum depth, minimum samples per split/leaf or minimum impurity decrease.
+      </li>
+      <li>
+       <strong>
+        Post-pruning:
+       </strong>
+       grow the tree, then remove branches that add little predictive value.
+      </li>
+      <li>
+       <strong>
+        Cross-validation:
+       </strong>
+       choose depth and pruning settings using validation folds.
+      </li>
+      <li>
+       <strong>
+        Limit features:
+       </strong>
+       remove irrelevant/noisy features and avoid unnecessary splits.
+      </li>
+      <li>
+       <strong>
+        More representative data:
+       </strong>
+       reduces the risk of learning accidental patterns.
+      </li>
+     </ul>
+     <div class="memory">
+      <strong>
+       Numerical method to memorize:
+      </strong>
+      (1) Count classes at parent. (2) Find parent Gini. (3) For each feature, count classes in each branch. (4) Find each branch Gini. (5) Weighted sum. (6) Pick minimum and draw the tree.
+     </div>
+     <h4>
+       2.3.6 CART - Classification and Regression Trees
+      </h4>
+     <p>
+      <strong>
+       CART
+      </strong>
+      is a decision-tree method used for both classification and regression. It repeatedly divides the data into two smaller groups using binary splits, then predicts from the leaf reached by a new record.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Simple CART tree" role="img" viewbox="0 0 620 220">
+       <rect fill="#eaf2fb" height="42" rx="8" stroke="#315f91" width="210" x="205" y="8">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="310" y="34">
+        Feature X ≤ threshold?
+       </text>
+       <path d="M260 50 L150 95 M360 50 L470 95" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <text fill="#244a78" font-size="12" x="188" y="77">
+        Yes
+       </text>
+       <text fill="#244a78" font-size="12" x="420" y="77">
+        No
+       </text>
+       <rect fill="#eaf6ef" height="48" rx="8" stroke="#39865a" width="170" x="65" y="95">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="150" y="123">
+        Leaf: Class A / value
+       </text>
+       <rect fill="#fff5df" height="48" rx="8" stroke="#cc8d21" width="170" x="385" y="95">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="470" y="123">
+        Leaf: Class B / value
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="310" y="190">
+        Binary split - keep splitting until a stopping rule is met
+       </text>
+      </svg>
+     </div>
+     <ol>
+      <li>
+       Start with the full training dataset at the root.
+      </li>
+      <li>
+       Try candidate binary splits on available features.
+      </li>
+      <li>
+       For classification, select a split that reduces impurity, commonly using Gini index.
+      </li>
+      <li>
+       For regression, select a split that reduces variance or squared error (MSE).
+      </li>
+      <li>
+       Split the data into left and right child nodes and repeat recursively.
+      </li>
+      <li>
+       Stop at a limit (maximum depth, minimum samples, or no useful improvement).
+      </li>
+      <li>
+       Prune unnecessary branches to reduce overfitting; the terminal nodes are leaves.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Prediction:
+      </strong>
+      A classification leaf returns the majority class; a regression leaf returns the mean target value of the training records in that leaf.
+     </p>
+     <div class="warning">
+      <strong>
+       Exam note:
+      </strong>
+      Gini is a classification impurity measure. For regression trees, CART normally uses variance/MSE reduction. CART supports both tasks, but the split criterion changes.
+     </div>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      easy to understand, handles numerical and categorical inputs, needs little feature scaling.
+      <strong>
+       Limitations:
+      </strong>
+      a deep tree can overfit and small data changes can produce a different tree; pruning and ensemble methods help.
+     </p>
+    </section>
+    <section class="subtopic" id="classification">
+     <h3>
+       2.4 Classification metrics and binary classification numerical
+       <span class="q">
+       May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       2.4.1 Confusion matrix
+      </h4>
+     <p>
+      A confusion matrix compares actual classes with predicted classes.
+     </p>
+     <table>
+      <tr>
+       <th>
+       </th>
+       <th>
+        Predicted Positive
+       </th>
+       <th>
+        Predicted Negative
+       </th>
+      </tr>
+      <tr>
+       <th>
+        Actual Positive
+       </th>
+       <td>
+        <strong>
+         TP
+        </strong>
+        - correctly predicted positive
+       </td>
+       <td>
+        <strong>
+         FN
+        </strong>
+        - positive predicted as negative
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Actual Negative
+       </th>
+       <td>
+        <strong>
+         FP
+        </strong>
+        - negative predicted as positive
+       </td>
+       <td>
+        <strong>
+         TN
+        </strong>
+        - correctly predicted negative
+       </td>
+      </tr>
+     </table>
+     <h4>
+       2.4.2 Important metrics and formulas
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Accuracy:
+       </strong>
+       Overall fraction of correct predictions.
+      </li>
+      <li>
+       <strong>
+        Precision:
+       </strong>
+       Out of all predicted positives, how many are actually positive.
+      </li>
+      <li>
+       <strong>
+        Recall / Sensitivity:
+       </strong>
+       Out of all actual positives, how many were correctly found.
+      </li>
+      <li>
+       <strong>
+        Specificity:
+       </strong>
+       Out of all actual negatives, how many were correctly identified.
+      </li>
+      <li>
+       <strong>
+        F1-score:
+       </strong>
+       Harmonic mean of precision and recall.
+      </li>
+     </ul>
+     <div class="eq">
+      Accuracy = (TP + TN)/(TP + TN + FP + FN)
+     </div>
+     <div class="eq">
+      Precision = TP/(TP + FP)   |   Recall = TP/(TP + FN)
+     </div>
+     <div class="eq">
+      Specificity = TN/(TN + FP)   |   F1 = 2 × Precision × Recall/(Precision + Recall)
+     </div>
+     <h4>
+       2.4.3 Worked numerical - 2025 grant proposal readers
+      </h4>
+     <p>
+      Reader A is actual and Reader B is predicted. Table in the paper gives:
+     </p>
+     <table>
+      <tr>
+       <th>
+        Actual \ Predicted
+       </th>
+       <th>
+        Yes
+       </th>
+       <th>
+        No
+       </th>
+      </tr>
+      <tr>
+       <th>
+        Yes
+       </th>
+       <td>
+        20
+       </td>
+       <td>
+        5
+       </td>
+      </tr>
+      <tr>
+       <th>
+        No
+       </th>
+       <td>
+        10
+       </td>
+       <td>
+        15
+       </td>
+      </tr>
+     </table>
+     <p>
+      Therefore TP = 20, FN = 5, FP = 10, TN = 15, and total = 50.
+     </p>
+     <div class="eq">
+      Accuracy = (20 + 15)/50 = 35/50 =
+      <strong>
+       70%
+      </strong>
+     </div>
+     <div class="eq">
+      Precision = 20/(20 + 10) = 20/30 =
+      <strong>
+       66.67%
+      </strong>
+     </div>
+     <div class="eq">
+      Recall = 20/(20 + 5) = 20/25 =
+      <strong>
+       80%
+      </strong>
+     </div>
+     <div class="eq">
+      Specificity = 15/(15 + 10) = 15/25 = 60%
+     </div>
+     <div class="eq">
+      F1 = 2(0.6667)(0.8)/(0.6667 + 0.8) ≈ 72.73%
+     </div>
+     <div class="memory">
+      <strong>
+       Remember:
+      </strong>
+      Precision uses predicted positives in the denominator; Recall uses actual positives. “Precision = purity of positive predictions; Recall = coverage of actual positives.”
+     </div>
+     <h4>
+       2.4.4 Which metric should be used?
+      </h4>
+     <p>
+      Accuracy is useful when classes are reasonably balanced and error costs are similar. Precision matters when false positives are costly (for example, incorrectly flagging a legitimate email as spam). Recall matters when false negatives are costly (for example, missing a fraudulent transaction or disease case). F1 balances precision and recall.
+     </p>
+     <h4>
+       2.4.5 Additional classification measures: Kappa and ROC curve
+      </h4>
+     <p>
+      <strong>
+       Cohen's Kappa (κ)
+      </strong>
+      measures agreement between predicted and actual classes after correcting for agreement expected by chance.
+     </p>
+     <div class="eq">
+      κ = (Pₒ - Pₑ) / (1 - Pₑ)
+     </div>
+     <p>
+      Pₒ is the observed agreement (normally accuracy); Pₑ is the expected chance agreement calculated from the row and column totals. κ = 1 means perfect agreement, κ = 0 means chance-level agreement, and a negative value means worse than chance agreement.
+     </p>
+     <p>
+      <strong>
+       ROC curve:
+      </strong>
+      plot the True Positive Rate (Recall/Sensitivity) on the Y-axis against the False Positive Rate (1 - Specificity) on the X-axis at different classification thresholds. A curve closer to the top-left is better. AUC summarises the curve; 1 is perfect separation and about 0.5 is random ranking.
+     </p>
+     <div class="eq">
+      TPR = TP/(TP+FN)    FPR = FP/(FP+TN) = 1 - Specificity
+     </div>
+     <h4>
+       2.4.6 Worked numerical - June 2026 paper (confusion matrix)
+      </h4>
+     <p>
+      The table in the paper is:
+     </p>
+     <table>
+      <tr>
+       <th>
+        Actual / Predicted
+       </th>
+       <th>
+        Predicted +
+       </th>
+       <th>
+        Predicted -
+       </th>
+      </tr>
+      <tr>
+       <th>
+        Actual +
+       </th>
+       <td>
+        40 (TP)
+       </td>
+       <td>
+        8 (FN)
+       </td>
+      </tr>
+      <tr>
+       <th>
+        Actual -
+       </th>
+       <td>
+        12 (FP)
+       </td>
+       <td>
+        30 (TN)
+       </td>
+      </tr>
+     </table>
+     <p>
+      Total = 40 + 8 + 12 + 30 = 90.
+     </p>
+     <div class="eq">
+      Accuracy = (TP+TN)/Total = (40+30)/90 = 70/90 =
+      <strong>
+       77.78%
+      </strong>
+     </div>
+     <div class="eq">
+      Precision = TP/(TP+FP) = 40/(40+12) =
+      <strong>
+       76.92%
+      </strong>
+     </div>
+     <div class="eq">
+      Recall = TP/(TP+FN) = 40/(40+8) =
+      <strong>
+       83.33%
+      </strong>
+     </div>
+     <div class="eq">
+      F1 = 2PR/(P+R) = 2(0.7692)(0.8333)/(0.7692+0.8333) =
+      <strong>
+       80%
+      </strong>
+     </div>
+     <p>
+      <strong>
+       Also:
+      </strong>
+      Specificity = TN/(TN+FP) = 30/42 = 71.43%.
+     </p>
+    </section>
+   <section class="panel recap" id="recap2">
+    <h3>
+      Module 2 - 60-second recap: Regression and trees
+    </h3>
+    <ul>
+     <li>
+      Least squares: b = [nΣxy − ΣxΣy] / [nΣx² − (Σx)²] and a = (Σy − bΣx)/n. Always show the totals table.
+     </li>
+     <li>
+      Regression metrics: MAE, MSE, RMSE, R². R² closer to 1 means more of the target variation is explained.
+     </li>
+     <li>
+      Logistic regression: z = β₀ + Σβᵢxᵢ, p = 1/(1+e⁻ᶻ), threshold usually 0.5; learned by minimizing log-loss.
+     </li>
+     <li>
+      Gini = 1 − Σpᵢ²; choose the split with the lowest weighted Gini. CART uses Gini for classification and variance/MSE for regression.
+     </li>
+     <li>
+      Confusion matrix: Accuracy=(TP+TN)/N, Precision=TP/(TP+FP), Recall=TP/(TP+FN), Specificity=TN/(TN+FP), F1=2PR/(P+R).
+     </li>
+     <li>
+      Verified lines: ŷ ≈ 11.506+12.208x (time/mass), ŷ = 3.2+8.4x (expenditure), Ŷ ≈ 25.134+0.650X (grades).
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="topic module" id="module3">
+    <h2>
+     Module 3 - Ensemble Learning
+    </h2>
+    <span class="tag">
+     06 hours
+    </span>
+    <p class="small">
+     Ensembles; K-fold cross-validation; boosting; stumps; XGBoost; bagging; subagging; Random Forest; combining classifiers.
+    </p>
+    <section class="subtopic" id="ensemble">
+     <h3>
+       3.1 Ensemble learning: Bagging, Boosting, Random Forest and XGBoost
+       <span class="q">
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       3.1.1 Ensemble learning
+      </h4>
+     <p>
+      Ensemble learning combines predictions from multiple models (called base learners) to produce a stronger and more reliable final prediction than an individual model in many cases.
+     </p>
+     <h4>
+       3.1.2 Bagging vs Boosting
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Bagging
+       </th>
+       <th>
+        Boosting
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Trains multiple models independently, often in parallel.
+       </td>
+       <td>
+        Trains models sequentially; each new model focuses on previous errors.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Uses bootstrap samples (random samples with replacement).
+       </td>
+       <td>
+        Reweights examples or fits residuals/gradients from earlier models.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Combines by majority vote (classification) or averaging (regression).
+       </td>
+       <td>
+        Combines weak learners using weighted contributions.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Mainly reduces variance and improves stability.
+       </td>
+       <td>
+        Can reduce bias and improve predictive accuracy.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Example: Random Forest.
+       </td>
+       <td>
+        Examples: AdaBoost, Gradient Boosting, XGBoost.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Usually less sensitive to noisy labels than aggressive boosting.
+       </td>
+       <td>
+        Can overfit noisy data if not regularized/tuned carefully.
+       </td>
+      </tr>
+     </table>
+     <div class="diagram">
+      <svg aria-label="Bagging and boosting comparison diagram" role="img" viewbox="0 0 650 190">
+       <text fill="#244a78" font-size="16" text-anchor="middle" x="155" y="20">
+        Bagging
+       </text>
+       <text fill="#244a78" font-size="16" text-anchor="middle" x="490" y="20">
+        Boosting
+       </text>
+       <rect fill="#eaf2fb" height="42" rx="7" stroke="#315f91" width="90" x="15" y="42">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="60" y="68">
+        Data
+       </text>
+       <path d="M105 63 L130 63 M130 63 L130 45 L150 45 M130 63 L130 85 L150 85" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#fff" height="34" rx="6" stroke="#3678b6" width="85" x="150" y="30">
+       </rect>
+       <rect fill="#fff" height="34" rx="6" stroke="#3678b6" width="85" x="150" y="72">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="192" y="51">
+        Model 1
+       </text>
+       <text font-size="12" text-anchor="middle" x="192" y="93">
+        Model 2
+       </text>
+       <path d="M235 47 L270 66 M235 89 L270 66" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="42" rx="7" stroke="#39865a" width="115" x="270" y="45">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="327" y="71">
+        Vote / Average
+       </text>
+       <rect fill="#eaf2fb" height="42" rx="7" stroke="#315f91" width="65" x="390" y="42">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="422" y="68">
+        Data
+       </text>
+       <path d="M455 63 H475 M475 63 H490" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#fff" height="42" rx="7" stroke="#3678b6" width="65" x="490" y="42">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="522" y="68">
+        M1
+       </text>
+       <path d="M555 63 H575" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#fff" height="42" rx="7" stroke="#3678b6" width="65" x="575" y="42">
+       </rect>
+       <text font-size="12" text-anchor="middle" x="607" y="68">
+        M2
+       </text>
+       <path d="M522 87 V117 H607 V87" fill="none" stroke="#bd7541" stroke-dasharray="4 3" stroke-width="2">
+       </path>
+       <text fill="#a36620" font-size="11" text-anchor="middle" x="565" y="138">
+        M2 focuses on M1 errors
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="325" y="172">
+        Bagging: parallel diversity. Boosting: sequential correction.
+       </text>
+      </svg>
+     </div>
+     <h4>
+       3.1.3 Random Forest algorithm - detailed answer
+      </h4>
+     <p>
+      Random Forest is an ensemble learning algorithm that builds many decision trees and combines their outputs. It uses bagging and random feature selection to make trees diverse.
+     </p>
+     <h4>
+       3.1.4 Algorithm steps
+      </h4>
+     <ol>
+      <li>
+       Take a bootstrap sample from the original training dataset (sample with replacement).
+      </li>
+      <li>
+       Grow a decision tree on that sample.
+      </li>
+      <li>
+       At each node, randomly select a subset of input features rather than checking every feature.
+      </li>
+      <li>
+       Choose the best split among the selected features using a measure such as Gini index (classification) or variance reduction (regression).
+      </li>
+      <li>
+       Repeat the process to build many trees using different bootstrap samples and feature subsets.
+      </li>
+      <li>
+       For classification, use majority voting across trees. For regression, take the average of tree predictions.
+      </li>
+     </ol>
+     <div class="diagram">
+      <svg aria-label="Random Forest workflow" role="img" viewbox="0 0 650 235">
+       <rect fill="#eaf2fb" height="38" rx="7" stroke="#315f91" width="160" x="245" y="5">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="325" y="29">
+        Training dataset
+       </text>
+       <path d="M285 43 L120 83 M325 43 L325 83 M365 43 L530 83" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <g>
+        <rect fill="#fff" height="42" rx="7" stroke="#3678b6" width="130" x="55" y="83">
+        </rect>
+        <rect fill="#fff" height="42" rx="7" stroke="#3678b6" width="130" x="260" y="83">
+        </rect>
+        <rect fill="#fff" height="42" rx="7" stroke="#3678b6" width="130" x="465" y="83">
+        </rect>
+        <text font-size="13" text-anchor="middle" x="120" y="109">
+         Tree 1
+        </text>
+        <text font-size="13" text-anchor="middle" x="325" y="109">
+         Tree 2
+        </text>
+        <text font-size="13" text-anchor="middle" x="530" y="109">
+         Tree N
+        </text>
+       </g>
+       <path d="M120 125 L325 165 M325 125 L325 165 M530 125 L325 165" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="42" rx="7" stroke="#39865a" width="160" x="245" y="165">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="325" y="191">
+        Vote / Average
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="325" y="226">
+        Final prediction
+       </text>
+      </svg>
+     </div>
+     <h4>
+       3.1.5 Advantages
+      </h4>
+     <ul>
+      <li>
+       Usually gives good accuracy and reduces overfitting compared with one deep decision tree.
+      </li>
+      <li>
+       Works for classification and regression.
+      </li>
+      <li>
+       Handles many features and captures non-linear relationships.
+      </li>
+      <li>
+       Less sensitive to individual training examples.
+      </li>
+      <li>
+       Can estimate feature importance and out-of-bag (OOB) performance.
+      </li>
+     </ul>
+     <h4>
+       3.1.6 Limitations
+      </h4>
+     <ul>
+      <li>
+       More memory and computation than one decision tree.
+      </li>
+      <li>
+       Less interpretable than a single tree.
+      </li>
+      <li>
+       May be inefficient for very large numbers of trees or latency-sensitive systems.
+      </li>
+     </ul>
+     <h4>
+       3.1.7 Real-world use cases
+      </h4>
+     <p>
+      Fraud detection, credit-risk assessment, customer churn prediction, medical classification, product demand prediction and equipment-failure prediction.
+     </p>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      Random samples + random features + many trees + vote/average = Random Forest.
+     </div>
+     <h4>
+       3.1.8 XGBoost (Extreme Gradient Boosting)
+      </h4>
+     <p>
+      XGBoost is an efficient and regularized implementation of gradient-boosted decision trees. It builds trees sequentially, with each new tree improving the errors/residuals of the current ensemble.
+     </p>
+     <h4>
+       3.1.9 Working steps
+      </h4>
+     <ol>
+      <li>
+       Start with an initial prediction (for example, the mean for regression).
+      </li>
+      <li>
+       Calculate the loss/gradient information showing where predictions are wrong.
+      </li>
+      <li>
+       Train a new decision tree to improve those errors.
+      </li>
+      <li>
+       Add the new tree's prediction to the current model using a learning rate.
+      </li>
+      <li>
+       Repeat for the specified number of boosting rounds.
+      </li>
+      <li>
+       Use regularization and validation/early stopping to control overfitting.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Important features:
+      </strong>
+      L1/L2 regularization, learning-rate shrinkage, row/column subsampling, tree pruning, handling of missing values, and efficient parallel computation for split finding.
+     </p>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      strong performance on structured/tabular data, flexible objective functions, regularization and efficient implementation.
+      <strong>
+       Limitations:
+      </strong>
+      requires parameter tuning, can overfit if poorly configured and is less interpretable than a simple model.
+     </p>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      credit scoring, fraud detection, ranking, churn prediction, sales forecasting and structured-data competitions.
+     </p>
+     <div class="memory">
+      <strong>
+       Distinguish:
+      </strong>
+      Random Forest = many trees built independently then combined. XGBoost = trees built one after another, each correcting earlier mistakes.
+     </div>
+     <h4>
+       3.1.10 Different ways to combine classifiers
+      </h4>
+     <p>
+      After several classifiers make predictions, their outputs can be combined to make one final decision.
+     </p>
+     <ol>
+      <li>
+       <strong>
+        Majority voting (hard voting):
+       </strong>
+       each model votes for one class; the class with the most votes wins.
+      </li>
+      <li>
+       <strong>
+        Soft voting:
+       </strong>
+       average the predicted class probabilities and choose the class with the highest average probability.
+      </li>
+      <li>
+       <strong>
+        Weighted voting:
+       </strong>
+       give stronger/reliable classifiers more votes or a higher weight.
+      </li>
+      <li>
+       <strong>
+        Probability combination:
+       </strong>
+       combine class probabilities using sum/average, product, maximum or minimum rules, depending on the design.
+      </li>
+      <li>
+       <strong>
+        Stacking:
+       </strong>
+       train a meta-classifier on the predictions of base classifiers; use out-of-fold predictions to avoid data leakage.
+      </li>
+      <li>
+       <strong>
+        Blending:
+       </strong>
+       similar to stacking, but the meta-model is trained using predictions on a held-out validation set.
+      </li>
+      <li>
+       <strong>
+        Regression ensembles:
+       </strong>
+       combine numerical predictions using mean or weighted mean.
+      </li>
+     </ol>
+     <div class="diagram">
+      <svg aria-label="Classifier combination diagram" role="img" viewbox="0 0 650 180">
+       <rect fill="#eaf2fb" height="38" rx="7" stroke="#315f91" width="130" x="10" y="20">
+       </rect>
+       <rect fill="#eaf2fb" height="38" rx="7" stroke="#315f91" width="130" x="10" y="72">
+       </rect>
+       <rect fill="#eaf2fb" height="38" rx="7" stroke="#315f91" width="130" x="10" y="124">
+       </rect>
+       <g fill="#172b45" font-size="13" text-anchor="middle">
+        <text x="75" y="44">
+         Classifier 1
+        </text>
+        <text x="75" y="96">
+         Classifier 2
+        </text>
+        <text x="75" y="148">
+         Classifier 3
+        </text>
+       </g>
+       <path d="M140 39 L260 89 M140 91 L260 91 M140 143 L260 93" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <rect fill="#fff5df" height="55" rx="8" stroke="#cc8d21" width="165" x="260" y="65">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="342" y="88">
+        Voting / averaging /
+       </text>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="342" y="106">
+        meta-classifier
+       </text>
+       <path d="M425 92 H490" stroke="#536b87" stroke-width="2">
+       </path>
+       <path d="M482 85 L490 92 L482 99" fill="none" stroke="#536b87" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="55" rx="8" stroke="#39865a" width="145" x="492" y="65">
+       </rect>
+       <text fill="#172b45" font-size="14" text-anchor="middle" x="564" y="97">
+        Final prediction
+       </text>
+      </svg>
+     </div>
+     <h4>
+       3.1.11 Subagging and decision stumps
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Subagging (subsample aggregating):
+       </strong>
+       train the same base learner on several random subsets sampled without replacement, then vote/average the predictions. Like bagging, it stabilises predictions, but bagging normally samples with replacement.
+      </li>
+      <li>
+       <strong>
+        Decision stump:
+       </strong>
+       a very small decision tree with only one split (one internal decision node). It is a weak learner often used in boosting; many stumps are combined to form a stronger model.
+      </li>
+     </ul>
+    </section>
+    <section class="subtopic" id="kfold">
+     <h3>
+       3.2 K-fold cross-validation
+      </h3>
+     <p>
+      K-fold cross-validation estimates how well a model will generalize by repeatedly training and validating on different parts of the available data.
+     </p>
+     <ol>
+      <li>
+       Shuffle the dataset when appropriate and divide it into K roughly equal folds.
+      </li>
+      <li>
+       For each of K rounds, use one fold for validation and the remaining K-1 folds for training.
+      </li>
+      <li>
+       Record the chosen performance metric for every round.
+      </li>
+      <li>
+       Calculate the average (and optionally variation) of the K scores.
+      </li>
+      <li>
+       Choose the model/hyperparameters with good average validation performance, then train the final model on the full training data.
+      </li>
+     </ol>
+     <div class="diagram">
+      <svg aria-label="Five fold cross validation diagram" role="img" viewbox="0 0 650 140">
+       <text fill="#26384e" font-size="13" x="18" y="22">
+        5-fold example
+       </text>
+       <g font-size="12" text-anchor="middle">
+        <rect fill="#eaf6ef" height="36" stroke="#39865a" width="115" x="20" y="40">
+        </rect>
+        <rect fill="#eaf2fb" height="36" stroke="#315f91" width="115" x="140" y="40">
+        </rect>
+        <rect fill="#eaf2fb" height="36" stroke="#315f91" width="115" x="260" y="40">
+        </rect>
+        <rect fill="#eaf2fb" height="36" stroke="#315f91" width="115" x="380" y="40">
+        </rect>
+        <rect fill="#eaf2fb" height="36" stroke="#315f91" width="115" x="500" y="40">
+        </rect>
+        <text x="77" y="63">
+         Fold 1
+        </text>
+        <text x="197" y="63">
+         Fold 2
+        </text>
+        <text x="317" y="63">
+         Fold 3
+        </text>
+        <text x="437" y="63">
+         Fold 4
+        </text>
+        <text x="557" y="63">
+         Fold 5
+        </text>
+       </g>
+       <text fill="#39865a" font-size="11" text-anchor="middle" x="77" y="94">
+        Validate
+       </text>
+       <text fill="#315f91" font-size="11" text-anchor="middle" x="377" y="94">
+        Train on other 4 folds
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="325" y="124">
+        Rotate the validation fold until each fold has been used once.
+       </text>
+      </svg>
+     </div>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      uses data efficiently; less dependent on one train-test split; useful for comparing models.
+      <strong>
+       Limitations:
+      </strong>
+      more computationally expensive. For classification, stratified K-fold preserves class proportions. Keep a final test set untouched until final evaluation to avoid leakage.
+     </p>
+    </section>
+   <section class="panel recap" id="recap3">
+    <h3>
+      Module 3 - 60-second recap: Ensemble learning
+    </h3>
+    <ul>
+     <li>
+      An ensemble combines several base learners to give a stronger, more stable prediction.
+     </li>
+     <li>
+      Bagging: parallel bootstrap samples, reduces variance → Random Forest. Boosting: sequential, focuses on earlier errors, reduces bias → AdaBoost, XGBoost.
+     </li>
+     <li>
+      Random Forest = bootstrap samples + random feature subsets + many trees + vote/average; OOB error and feature importance come free.
+     </li>
+     <li>
+      XGBoost = regularized gradient boosting; learning rate, L1/L2, subsampling and early stopping control overfitting.
+     </li>
+     <li>
+      Combining classifiers: hard/soft/weighted voting, stacking (out-of-fold), blending, or mean/weighted mean for regression.
+     </li>
+     <li>
+      K-fold: rotate the validation fold K times, average the scores, and keep a final test set untouched until the end.
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="topic module" id="module4">
+    <h2>
+     Module 4 - Learning with Classification
+    </h2>
+    <span class="tag">
+     08 hours
+    </span>
+    <p class="small">
+     Support Vector Machine; constrained optimisation; optimal decision boundary; margins and support vectors; hard/soft margins; quadratic programming; linear/non-linear classification; kernel trick; Support Vector Regression; multiclass classification.
+    </p>
+    <section class="subtopic" id="svm">
+     <h3>
+       4.1 Support Vector Machine (SVM), hyperplane, margins and kernel trick
+       <span class="q">
+       May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       4.1.1 What is SVM?
+      </h4>
+     <p>
+      Support Vector Machine is a supervised learning algorithm used mainly for classification (and also regression). It finds a decision boundary, called a hyperplane, that separates classes with the maximum possible margin.
+     </p>
+     <div class="diagram">
+      <svg aria-label="SVM maximum margin hyperplane illustration" role="img" viewbox="0 0 650 265">
+       <line stroke="#26384e" x1="50" x2="610" y1="220" y2="220">
+       </line>
+       <line stroke="#26384e" x1="50" x2="50" y1="220" y2="20">
+       </line>
+       <path d="M120 210 L500 40" stroke="#244a78" stroke-width="3">
+       </path>
+       <path d="M100 170 L480 0" stroke="#bd7541" stroke-dasharray="6 4" stroke-width="2">
+       </path>
+       <path d="M140 250 L520 80" stroke="#bd7541" stroke-dasharray="6 4" stroke-width="2">
+       </path>
+       <g fill="#3678b6">
+        <circle cx="180" cy="92" r="6">
+        </circle>
+        <circle cx="230" cy="115" r="6">
+        </circle>
+        <circle cx="290" cy="70" r="6">
+        </circle>
+        <circle cx="350" cy="104" r="6">
+        </circle>
+       </g>
+       <g fill="#bf6a3d">
+        <rect height="11" width="11" x="340" y="155">
+        </rect>
+        <rect height="11" width="11" x="405" y="175">
+        </rect>
+        <rect height="11" width="11" x="460" y="125">
+        </rect>
+        <rect height="11" width="11" x="510" y="145">
+        </rect>
+       </g>
+       <circle cx="230" cy="115" fill="none" r="11" stroke="#172b45" stroke-width="2">
+       </circle>
+       <rect fill="none" height="23" stroke="#172b45" stroke-width="2" width="23" x="334" y="149">
+       </rect>
+       <text fill="#244a78" font-size="12" x="250" y="33">
+        Hyperplane
+       </text>
+       <text fill="#bd7541" font-size="12" x="500" y="17">
+        Margin boundaries
+       </text>
+       <text fill="#244a78" font-size="11" x="185" y="140">
+        Support vector
+       </text>
+      </svg>
+      <div class="caption">
+       The closest training points to the separating boundary are support vectors; they determine the margin.
+      </div>
+     </div>
+     <h4>
+       4.1.2 Important terms
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Hyperplane:
+       </strong>
+       Decision boundary separating classes. In 2D it is a line; in 3D it is a plane; in higher dimensions it is a hyperplane.
+      </li>
+      <li>
+       <strong>
+        Support vectors:
+       </strong>
+       Training points closest to the hyperplane. These points determine the optimal boundary and margin.
+      </li>
+      <li>
+       <strong>
+        Margin:
+       </strong>
+       Distance between the hyperplane and the nearest points of the classes.
+      </li>
+      <li>
+       <strong>
+        Optimal separating hyperplane:
+       </strong>
+       Hyperplane that maximises the margin, generally improving the ability to generalise.
+      </li>
+      <li>
+       <strong>
+        Hard margin:
+       </strong>
+       Allows no classification errors; requires linearly separable data and is sensitive to noise/outliers.
+      </li>
+      <li>
+       <strong>
+        Soft margin:
+       </strong>
+       Allows some violations using slack variables; works better with noisy or overlapping data.
+      </li>
+      <li>
+       <strong>
+        Kernel:
+       </strong>
+       Function that allows SVM to model non-linear boundaries by computing similarities as if data were mapped to a higher-dimensional space.
+      </li>
+     </ul>
+     <h4>
+       4.1.3 SVM optimisation problem
+      </h4>
+     <p>
+      For linearly separable data with labels yᵢ ∈ {-1,+1}, SVM chooses w and b by minimising:
+     </p>
+     <div class="eq">
+      Minimise: ½ ||w||²
+     </div>
+     <div class="eq">
+      Subject to: yᵢ(wᵀxᵢ + b) ≥ 1 for every training example i
+     </div>
+     <div class="callout">
+      <strong>
+       Why this maximises the margin:
+      </strong>
+      the two boundary planes are wᵀx + b = +1 and wᵀx + b = -1, so the margin width is
+      <span class="eq">
+       margin = 2 / ||w||
+      </span>
+      Minimising ||w||² therefore widens the gap between the classes.
+     </div>
+     <p>
+      For soft margin, introduce slack variables ξᵢ and penalty C:
+     </p>
+     <div class="eq">
+      Minimise: ½ ||w||² + CΣξᵢ    subject to   yᵢ(wᵀxᵢ+b) ≥ 1-ξᵢ, ξᵢ ≥ 0
+     </div>
+     <p>
+      C controls the penalty for margin violations: higher C penalises errors more strongly; lower C permits a wider margin with more violations.
+     </p>
+     <h4>
+       4.1.4 Kernel trick and common kernels
+      </h4>
+     <p>
+      The kernel trick calculates inner products in a transformed feature space without explicitly computing the transformation. It enables a linear separator in the transformed space to represent a non-linear boundary in the original space.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Kernel
+       </th>
+       <th>
+        Formula / use
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Linear
+       </td>
+       <td>
+        K(x,z) = xᵀz. Suitable when data is approximately linearly separable.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Polynomial
+       </td>
+       <td>
+        K(x,z) = (xᵀz + c)ᵈ. Models polynomial relationships.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        RBF / Gaussian
+       </td>
+       <td>
+        K(x,z) = exp(-γ||x-z||²). Handles flexible non-linear boundaries; common general-purpose choice.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Sigmoid
+       </td>
+       <td>
+        K(x,z) = tanh(αxᵀz + c). Similar form to a neural-network activation.
+       </td>
+      </tr>
+     </table>
+     <h4>
+       4.1.5 Significance of optimal separating hyperplane
+      </h4>
+     <ul>
+      <li>
+       Separates the classes using a decision boundary.
+      </li>
+      <li>
+       Maximum margin generally improves generalization on unseen data.
+      </li>
+      <li>
+       Only support vectors determine the final boundary.
+      </li>
+      <li>
+       Can handle high-dimensional feature spaces.
+      </li>
+      <li>
+       Kernel functions allow non-linear classification.
+      </li>
+     </ul>
+     <p>
+      <strong>
+       Limitations:
+      </strong>
+      choosing kernel and parameters can be difficult; training can be slow on very large datasets; results may be less interpretable; feature scaling is usually important.
+     </p>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      SVM = widest safe road between classes. Support vectors are the closest points; kernel bends the boundary by changing the feature space.
+     </div>
+     <h4>
+       4.1.6 Support Vector Regression (SVR)
+      </h4>
+     <p>
+      SVR applies the SVM idea to regression. Instead of separating classes, it finds a function that keeps prediction errors within an acceptable ε-wide tube around the regression function. Errors outside the tube are penalised.
+     </p>
+     <div class="eq">
+      ε-insensitive loss: Lε(y, f(x)) = 0 when |y-f(x)| ≤ ε; otherwise |y-f(x)| - ε
+     </div>
+     <p>
+      SVR can use linear or non-linear kernels (such as RBF). It is useful for regression with complex patterns, but kernel and parameters such as C and ε need tuning.
+     </p>
+     <h4>
+       4.1.7 Why SVM is a Quadratic Programming (QP) problem
+      </h4>
+     <p>
+      The hard-margin SVM minimises the quadratic objective ½||w||² while satisfying linear constraints yᵢ(wᵀxᵢ+b) ≥ 1. A quadratic objective with linear constraints is a quadratic programming optimisation problem. Soft-margin SVM adds non-negative slack variables ξᵢ and a penalty CΣξᵢ.
+     </p>
+     <p>
+      The dual formulation is also a quadratic optimisation problem in Lagrange multipliers αᵢ, with constraints 0 ≤ αᵢ ≤ C and Σαᵢyᵢ = 0. Only points with non-zero αᵢ become support vectors.
+     </p>
+     <h4>
+       4.1.8 Soft-margin SVM dual problem (for a fuller 10-mark answer)
+      </h4>
+     <div class="eq">
+      Maximise: Σᵢ αᵢ - ½ΣᵢΣⱼ αᵢαⱼyᵢyⱼ(xᵢᵀxⱼ)
+     </div>
+     <div class="eq">
+      Subject to: 0 ≤ αᵢ ≤ C and Σᵢ αᵢyᵢ = 0
+     </div>
+     <p>
+      For a kernel SVM, replace xᵢᵀxⱼ with K(xᵢ,xⱼ). The predicted class is sign(Σᵢ αᵢyᵢK(xᵢ,x)+b). Support vectors are the training points with non-zero αᵢ.
+     </p>
+    </section>
+    <section class="subtopic" id="multiclass">
+     <h3>
+       4.2 Multiclass classification
+      </h3>
+     <p>
+      Multiclass classification assigns an input to one of more than two mutually exclusive classes, such as classifying an image as cat, dog or bird.
+     </p>
+     <p>
+      <strong>
+       Common approaches:
+      </strong>
+     </p>
+     <ol>
+      <li>
+       <strong>
+        One-vs-Rest (OvR):
+       </strong>
+       Train one binary classifier per class. Each classifier separates its class from all remaining classes. Choose the class with the highest score.
+      </li>
+      <li>
+       <strong>
+        One-vs-One (OvO):
+       </strong>
+       Train a classifier for every pair of classes. For K classes, the number of classifiers is K(K-1)/2. Use majority voting.
+      </li>
+      <li>
+       <strong>
+        Softmax / native multiclass model:
+       </strong>
+       A model produces a score for each class and softmax converts scores to probabilities that sum to 1. Choose the highest probability.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      handwritten digit recognition (0-9), animal/image recognition, news topic classification and disease-type classification.
+     </p>
+    </section>
+    <section class="subtopic" id="emailspam">
+     <h3>
+       4.3 Email spam detection - suitable ML technique
+      </h3>
+     <p>
+      Email spam detection is a
+      <strong>
+       supervised binary classification
+      </strong>
+      problem because training emails are labelled Spam or Not Spam (Ham). A suitable simple technique is
+      <strong>
+       Multinomial Naive Bayes
+      </strong>
+      , which works well with word-count or TF-IDF features.
+     </p>
+     <ol>
+      <li>
+       Collect a dataset of emails labelled Spam/Ham.
+      </li>
+      <li>
+       Preprocess text: lowercase, tokenize, remove unnecessary symbols/stop words where appropriate, and convert text to numeric features using Bag-of-Words or TF-IDF.
+      </li>
+      <li>
+       Split into training and test data.
+      </li>
+      <li>
+       Train Naive Bayes to estimate prior class probabilities and word likelihoods for Spam and Ham.
+      </li>
+      <li>
+       For a new email, calculate the posterior probability of each class and predict the class with the larger probability.
+      </li>
+      <li>
+       Evaluate using precision, recall, F1 and confusion matrix. Precision matters because false spam flags can hide genuine emails; recall matters because missed spam reaches the inbox.
+      </li>
+     </ol>
+     <p>
+      Naive Bayes is fast, efficient for high-dimensional text and works with relatively small datasets. SVM or Logistic Regression can also be used as alternative supervised text classifiers.
+     </p>
+    </section>
+   <section class="panel recap" id="recap4">
+    <h3>
+      Module 4 - 60-second recap: Classification with SVM
+    </h3>
+    <ul>
+     <li>
+      SVM finds the maximum-margin hyperplane; margin = 2/||w||. Support vectors are the closest points and alone determine the boundary.
+     </li>
+     <li>
+      Hard margin allows no violations; soft margin adds slack ξᵢ and penalty C — larger C means fewer violations are tolerated.
+     </li>
+     <li>
+      Kernel trick: linear, polynomial, RBF/Gaussian and sigmoid; RBF is the common default. Scale features before using kernels.
+     </li>
+     <li>
+      SVR uses an ε-insensitive tube: errors within |y − f(x)| ≤ ε are ignored, larger errors are penalized.
+     </li>
+     <li>
+      Multiclass: One-vs-Rest (K classifiers), One-vs-One (K(K−1)/2 classifiers), or softmax in a native multiclass model.
+     </li>
+     <li>
+      SVM is a quadratic program: quadratic objective ½||w||² with linear constraints, dual variables 0 ≤ αᵢ ≤ C and Σαᵢyᵢ = 0.
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="topic module" id="module5">
+    <h2>
+     Module 5 - Learning with Clustering
+    </h2>
+    <span class="tag">
+     07 hours
+    </span>
+    <p class="small">
+     Distance metrics; major clustering approaches; graph-based clustering with MST; model-based clustering with EM; density-based clustering with DBSCAN; K-means.
+    </p>
+    <section class="subtopic" id="clustering">
+     <h3>
+       5.1 Clustering: distance metrics, K-means, DBSCAN and MST
+       <span class="q">
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       5.1.1 Distance metrics used in clustering
+      </h4>
+     <p>
+      Distance metrics measure how similar or dissimilar two data points are. The metric should match the type and scale of data.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Metric
+       </th>
+       <th>
+        Formula / meaning
+       </th>
+       <th>
+        Common use
+       </th>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Euclidean
+        </strong>
+       </td>
+       <td>
+        √Σ(xᵢ-yᵢ)² - straight-line distance.
+       </td>
+       <td>
+        Continuous numerical features.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Manhattan
+        </strong>
+       </td>
+       <td>
+        Σ|xᵢ-yᵢ| - sum of absolute coordinate differences.
+       </td>
+       <td>
+        Grid-like movement; sometimes less sensitive to large coordinate differences.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Minkowski
+        </strong>
+       </td>
+       <td>
+        (Σ|xᵢ-yᵢ|ᵖ)^(1/p) - general family; p=1 Manhattan, p=2 Euclidean.
+       </td>
+       <td>
+        Flexible numerical distance.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Hamming
+        </strong>
+       </td>
+       <td>
+        Number of positions where values differ.
+       </td>
+       <td>
+        Binary or categorical strings/vectors.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Cosine distance
+        </strong>
+       </td>
+       <td>
+        1 - (x·y)/(||x|| ||y||); compares direction/angle.
+       </td>
+       <td>
+        Text vectors and high-dimensional sparse data.
+       </td>
+      </tr>
+     </table>
+     <p>
+      <strong>
+       Important:
+      </strong>
+      Scale numerical features before distance-based clustering when ranges differ greatly; otherwise a large-scale feature may dominate the distance.
+     </p>
+     <h4>
+       5.1.2 K-means algorithm
+      </h4>
+     <p>
+      K-means is an unsupervised clustering algorithm that divides n data points into K clusters. Each cluster is represented by its centroid (mean point).
+     </p>
+     <div class="diagram">
+      <svg aria-label="K-means two-cluster illustration" role="img" viewbox="0 0 650 235">
+       <rect fill="#fff" height="205" rx="8" stroke="#dbe2ec" width="630" x="10" y="10">
+       </rect>
+       <g fill="#3678b6">
+        <circle cx="100" cy="80" r="5">
+        </circle>
+        <circle cx="130" cy="100" r="5">
+        </circle>
+        <circle cx="155" cy="70" r="5">
+        </circle>
+        <circle cx="175" cy="112" r="5">
+        </circle>
+        <circle cx="120" cy="135" r="5">
+        </circle>
+        <circle cx="210" cy="85" r="5">
+        </circle>
+       </g>
+       <g fill="#bd7541">
+        <circle cx="430" cy="105" r="5">
+        </circle>
+        <circle cx="465" cy="80" r="5">
+        </circle>
+        <circle cx="500" cy="115" r="5">
+        </circle>
+        <circle cx="530" cy="90" r="5">
+        </circle>
+        <circle cx="475" cy="145" r="5">
+        </circle>
+        <circle cx="550" cy="135" r="5">
+        </circle>
+       </g>
+       <path d="M149 96 l0 -15 M141 88 l16 0 M490 110 l0 -15 M482 102 l16 0" stroke="#172b45" stroke-width="3">
+       </path>
+       <text fill="#3678b6" font-size="13" text-anchor="middle" x="150" y="165">
+        Cluster 1
+       </text>
+       <text fill="#bd7541" font-size="13" text-anchor="middle" x="490" y="175">
+        Cluster 2
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="325" y="202">
+        Each centroid is updated to the mean of points assigned to that cluster.
+       </text>
+      </svg>
+     </div>
+     <ol>
+      <li>
+       Choose the number of clusters K.
+      </li>
+      <li>
+       Initialize K centroids (often randomly).
+      </li>
+      <li>
+       Calculate the distance from each point to each centroid.
+      </li>
+      <li>
+       Assign each point to its nearest centroid.
+      </li>
+      <li>
+       Recalculate each centroid as the mean of points in that cluster.
+      </li>
+      <li>
+       Repeat assignment and centroid update until assignments/centroids stop changing or a limit is reached.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Objective:
+      </strong>
+      minimise within-cluster sum of squared distances from points to their assigned centroid.
+     </p>
+     <div class="eq">
+      Within-cluster SSE = Σⱼ Σ(x∈Cⱼ) ||x - μⱼ||²    (μⱼ = centroid of cluster j)
+     </div>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      simple, fast and easy to implement.
+      <strong>
+       Limitations:
+      </strong>
+      K must be chosen in advance; sensitive to initialization and outliers; works best for roughly spherical, similarly sized clusters; numeric data and suitable scaling are needed.
+     </p>
+     <h4>
+       5.1.3 DBSCAN - Density-Based Spatial Clustering of Applications with Noise
+      </h4>
+     <p>
+      DBSCAN is a density-based unsupervised algorithm. It groups points that are closely packed and marks points in sparse regions as noise/outliers. It does not require the number of clusters in advance.
+     </p>
+     <p>
+      <strong>
+       Two parameters:
+      </strong>
+      ε (Epsilon) = neighbourhood radius; MinPts = minimum number of points required in an ε-neighbourhood to form a dense region.
+     </p>
+     <div class="grid">
+      <div class="mini">
+       <strong>
+        Core point
+       </strong>
+       <br/>
+       Has at least MinPts points in its ε-neighbourhood (usually counting itself).
+      </div>
+      <div class="mini">
+       <strong>
+        Border point
+       </strong>
+       <br/>
+       Has fewer than MinPts neighbours but lies within the ε-neighbourhood of a core point.
+      </div>
+      <div class="mini">
+       <strong>
+        Noise point
+       </strong>
+       <br/>
+       Is neither a core point nor density-reachable from a core point.
+      </div>
+     </div>
+     <div class="diagram">
+      <svg aria-label="DBSCAN core border noise illustration" role="img" viewbox="0 0 650 240">
+       <circle cx="170" cy="110" fill="#eaf2fb" r="83" stroke="#3678b6" stroke-dasharray="5 4" stroke-width="2">
+       </circle>
+       <g fill="#3678b6">
+        <circle cx="125" cy="90" r="6">
+        </circle>
+        <circle cx="155" cy="70" r="6">
+        </circle>
+        <circle cx="190" cy="80" r="6">
+        </circle>
+        <circle cx="205" cy="115" r="6">
+        </circle>
+        <circle cx="170" cy="135" r="6">
+        </circle>
+        <circle cx="135" cy="140" r="6">
+        </circle>
+        <circle cx="180" cy="105" r="8">
+        </circle>
+       </g>
+       <circle cx="244" cy="135" fill="#d58b35" r="6">
+       </circle>
+       <circle cx="270" cy="155" fill="#d58b35" r="6">
+       </circle>
+       <circle cx="565" cy="65" fill="#bf5148" r="6">
+       </circle>
+       <text fill="#244a78" font-size="13" text-anchor="middle" x="180" y="215">
+        Dense ε-neighbourhood
+       </text>
+       <text fill="#fff" font-size="11" text-anchor="middle" x="180" y="105">
+        Core
+       </text>
+       <text fill="#a36620" font-size="12" text-anchor="middle" x="270" y="180">
+        Border
+       </text>
+       <text fill="#a54435" font-size="12" text-anchor="middle" x="565" y="90">
+        Noise
+       </text>
+      </svg>
+      <div class="caption">
+       Conceptual illustration of a dense cluster, a border point and an isolated noise point.
+      </div>
+     </div>
+     <h4>
+       5.1.4 DBSCAN steps
+      </h4>
+     <ol>
+      <li>
+       Choose ε and MinPts.
+      </li>
+      <li>
+       Select an unvisited point and find all points in its ε-neighbourhood.
+      </li>
+      <li>
+       If neighbours are fewer than MinPts, temporarily mark it as noise. If it is later reached from a core point, it can be reclassified as a border point.
+      </li>
+      <li>
+       If it has at least MinPts neighbours, it is a core point; create a new cluster.
+      </li>
+      <li>
+       Expand the cluster by adding its density-reachable neighbours. If a neighbour is also core, add its neighbours too.
+      </li>
+      <li>
+       Continue until all points are visited; remaining unassigned points are noise.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Example:
+      </strong>
+      Suppose points A, B, C and D form a dense group where each core point has at least MinPts neighbours within ε. DBSCAN expands one cluster through these connected core points. A nearby point E with too few neighbours but lying inside the ε-neighbourhood of a core point becomes a border point. A far-away point F that is not density-reachable from any core point is labelled noise.
+     </p>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      finds irregular-shaped clusters, identifies noise, does not need K.
+      <strong>
+       Limitations:
+      </strong>
+      choosing ε/MinPts can be difficult; struggles when clusters have very different densities; distance becomes less meaningful in very high dimensions.
+     </p>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      Epsilon makes the neighbourhood; MinPts decides core; core points grow a cluster; border points join; noise stays outside.
+     </div>
+     <h4>
+       5.1.5 Clustering using Minimum Spanning Tree (MST)
+      </h4>
+     <p>
+      An MST is a tree connecting all vertices of a weighted graph with no cycle and minimum possible total edge weight. For clustering, treat each data point as a vertex and the distance between points as edge weights.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Minimum spanning tree clustering illustration" role="img" viewbox="0 0 650 215">
+       <g fill="none" stroke="#526780" stroke-width="3">
+        <path d="M90 70 L155 45 L215 90 L150 140 L90 70">
+        </path>
+        <path d="M215 90 L435 75 L500 45 L560 110 L480 155 L435 75">
+        </path>
+       </g>
+       <g fill="#3678b6">
+        <circle cx="90" cy="70" r="9">
+        </circle>
+        <circle cx="155" cy="45" r="9">
+        </circle>
+        <circle cx="215" cy="90" r="9">
+        </circle>
+        <circle cx="150" cy="140" r="9">
+        </circle>
+       </g>
+       <g fill="#bd7541">
+        <circle cx="435" cy="75" r="9">
+        </circle>
+        <circle cx="500" cy="45" r="9">
+        </circle>
+        <circle cx="560" cy="110" r="9">
+        </circle>
+        <circle cx="480" cy="155" r="9">
+        </circle>
+       </g>
+       <path d="M215 90 L435 75" stroke="#bf5148" stroke-dasharray="6 4" stroke-width="3">
+       </path>
+       <path d="M320 70 L320 105" stroke="#bf5148" stroke-width="2">
+       </path>
+       <text fill="#a54435" font-size="12" text-anchor="middle" x="320" y="125">
+        Longest bridge edge
+       </text>
+       <text fill="#3678b6" font-size="13" text-anchor="middle" x="150" y="185">
+        Cluster A
+       </text>
+       <text fill="#bd7541" font-size="13" text-anchor="middle" x="500" y="190">
+        Cluster B
+       </text>
+      </svg>
+      <div class="caption">
+       Remove the long bridge edge to separate two natural groups.
+      </div>
+     </div>
+     <h4>
+       5.1.6 Steps
+      </h4>
+     <ol>
+      <li>
+       Represent every data point as a vertex.
+      </li>
+      <li>
+       Calculate pairwise distances and create a weighted graph.
+      </li>
+      <li>
+       Construct an MST using Prim's or Kruskal's algorithm. The MST contains n-1 edges.
+      </li>
+      <li>
+       Sort MST edges by weight and remove the largest k-1 edges to obtain k clusters.
+      </li>
+      <li>
+       Each connected component after cutting is a cluster.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Example:
+      </strong>
+      Suppose points A, B, C are close to each other and D, E, F are close to each other, while the shortest connection between the two groups is much longer. The MST includes that bridge. Removing the longest bridge produces clusters {A,B,C} and {D,E,F}.
+     </p>
+     <p>
+      <strong>
+       Advantages:
+      </strong>
+      intuitive and can reveal non-spherical structure.
+      <strong>
+       Limitations:
+      </strong>
+      pairwise distance graph can be expensive for large datasets; noisy/outlier points may create long edges; deciding where to cut can require judgement.
+     </p>
+     <h4>
+       5.1.7 Worked numerical - June 2026 paper (DBSCAN)
+      </h4>
+     <p>
+      Dataset = {1, 2, 3.5, 4, 5, 11}, ε = 2 and MinPts = 4. Assume the point itself is included in its ε-neighbourhood, as in standard DBSCAN.
+     </p>
+     <table>
+      <tr>
+       <th>
+        Point
+       </th>
+       <th>
+        ε-neighbours (distance ≤ 2)
+       </th>
+       <th>
+        Count
+       </th>
+       <th>
+        Type
+       </th>
+      </tr>
+      <tr>
+       <td>
+        1
+       </td>
+       <td>
+        {1, 2}
+       </td>
+       <td>
+        2
+       </td>
+       <td>
+        Border point (density-reachable from core point 2)
+       </td>
+      </tr>
+      <tr>
+       <td>
+        2
+       </td>
+       <td>
+        {1, 2, 3.5, 4}
+       </td>
+       <td>
+        4
+       </td>
+       <td>
+        Core point
+       </td>
+      </tr>
+      <tr>
+       <td>
+        3.5
+       </td>
+       <td>
+        {2, 3.5, 4, 5}
+       </td>
+       <td>
+        4
+       </td>
+       <td>
+        Core point
+       </td>
+      </tr>
+      <tr>
+       <td>
+        4
+       </td>
+       <td>
+        {2, 3.5, 4, 5}
+       </td>
+       <td>
+        4
+       </td>
+       <td>
+        Core point
+       </td>
+      </tr>
+      <tr>
+       <td>
+        5
+       </td>
+       <td>
+        {3.5, 4, 5}
+       </td>
+       <td>
+        3
+       </td>
+       <td>
+        Border point (density-reachable from core point 3.5 or 4)
+       </td>
+      </tr>
+      <tr>
+       <td>
+        11
+       </td>
+       <td>
+        {11}
+       </td>
+       <td>
+        1
+       </td>
+       <td>
+        Noise / outlier
+       </td>
+      </tr>
+     </table>
+     <div class="callout">
+      <strong>
+       Final clusters:
+      </strong>
+      Cluster 1 = {1, 2, 3.5, 4, 5}; core points = {2, 3.5, 4}; border points = {1, 5}. Point 11 is noise.
+     </div>
+     <p>
+      <strong>
+       Method:
+      </strong>
+      calculate each ε-neighbourhood → identify core points with at least MinPts → expand the cluster through density-reachable core points → attach border points → mark remaining isolated points as noise.
+     </p>
+     <h4>
+       5.1.8 Major clustering approaches - quick comparison
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Approach
+       </th>
+       <th>
+        Main idea
+       </th>
+       <th>
+        Example in this syllabus
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Centroid / partition based
+       </td>
+       <td>
+        Assign points to the nearest representative centre.
+       </td>
+       <td>
+        K-means
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Hierarchical
+       </td>
+       <td>
+        Build a tree of nested clusters by repeatedly merging or splitting groups.
+       </td>
+       <td>
+        Agglomerative / divisive clustering
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Density based
+       </td>
+       <td>
+        Join dense regions and label sparse points as noise.
+       </td>
+       <td>
+        DBSCAN
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Graph based
+       </td>
+       <td>
+        Represent points as a weighted graph and use edge structure to form groups.
+       </td>
+       <td>
+        Minimum Spanning Tree clustering
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Model based
+       </td>
+       <td>
+        Assume data was generated by a probability model and estimate its parameters.
+       </td>
+       <td>
+        Gaussian Mixture Model using EM
+       </td>
+      </tr>
+     </table>
+    </section>
+    <section class="subtopic" id="em">
+     <h3>
+       5.2 Expectation-Maximization (EM) Algorithm
+      </h3>
+     <p>
+      EM is an iterative method for estimating model parameters when data contains hidden/latent variables or incomplete observations. A common use is fitting a Gaussian Mixture Model for clustering.
+     </p>
+     <div class="diagram">
+      <svg aria-label="Expectation maximization loop" role="img" viewbox="0 0 650 140">
+       <rect fill="#eaf2fb" height="55" rx="8" stroke="#315f91" width="170" x="20" y="35">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="105" y="57">
+        E-step
+       </text>
+       <text font-size="11" text-anchor="middle" x="105" y="75">
+        Estimate hidden labels
+       </text>
+       <path d="M190 62 H245" stroke="#526780" stroke-width="2">
+       </path>
+       <path d="M237 55 L245 62 L237 69" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#eaf6ef" height="55" rx="8" stroke="#39865a" width="170" x="247" y="35">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="332" y="57">
+        M-step
+       </text>
+       <text font-size="11" text-anchor="middle" x="332" y="75">
+        Update parameters
+       </text>
+       <path d="M417 62 H472" stroke="#526780" stroke-width="2">
+       </path>
+       <path d="M464 55 L472 62 L464 69" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <rect fill="#fff5df" height="55" rx="8" stroke="#cc8d21" width="155" x="474" y="35">
+       </rect>
+       <text font-size="14" text-anchor="middle" x="551" y="57">
+        Check convergence
+       </text>
+       <text font-size="11" text-anchor="middle" x="551" y="75">
+        Repeat if needed
+       </text>
+       <path d="M550 90 V118 H105 V90" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+       <path d="M98 98 L105 90 L112 98" fill="none" stroke="#526780" stroke-width="2">
+       </path>
+      </svg>
+      <div class="caption">
+       E estimates latent assignments; M updates model parameters; repeat until convergence.
+      </div>
+     </div>
+     <ol>
+      <li>
+       <strong>
+        Initialize:
+       </strong>
+       choose initial parameter estimates (for example, mixture weights, means and covariance matrices).
+      </li>
+      <li>
+       <strong>
+        E-step (Expectation):
+       </strong>
+       using current parameters, estimate the probability that each data point belongs to each hidden component (responsibilities).
+      </li>
+      <li>
+       <strong>
+        M-step (Maximization):
+       </strong>
+       update parameters to maximise expected likelihood using the estimated responsibilities.
+      </li>
+      <li>
+       <strong>
+        Repeat:
+       </strong>
+       alternate E and M steps until the log-likelihood changes very little or a maximum iteration count is reached.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      Gaussian mixture clustering, missing-data estimation, image segmentation, speech processing and probabilistic modelling.
+      <strong>
+       Limitations:
+      </strong>
+      may converge to a local optimum; result can depend on initialization; convergence may be slow.
+     </p>
+     <div class="memory">
+      <strong>
+       Memory cue:
+      </strong>
+      E = Estimate hidden membership; M = Modify parameters.
+     </div>
+    </section>
+   <section class="panel recap" id="recap5">
+    <h3>
+      Module 5 - 60-second recap: Clustering
+    </h3>
+    <ul>
+     <li>
+      Distance metrics: Euclidean, Manhattan, Minkowski (p=1 Manhattan, p=2 Euclidean), Hamming and cosine. Scale features first.
+     </li>
+     <li>
+      K-means: choose K → initialize centroids → assign nearest centroid → recompute the mean → repeat. It minimises within-cluster SSE.
+     </li>
+     <li>
+      DBSCAN needs ε and MinPts: core (at least MinPts incl. itself), border (reachable from a core, fewer than MinPts), noise (not reachable).
+     </li>
+     <li>
+      MST clustering: build the minimum spanning tree, then remove the k−1 heaviest edges to obtain k clusters.
+     </li>
+     <li>
+      EM alternates the E-step (estimate hidden memberships/responsibilities) and the M-step (update parameters) until convergence.
+     </li>
+     <li>
+      June 2026 DBSCAN answer: cluster {1, 2, 3.5, 4, 5}; core {2, 3.5, 4}; border {1, 5}; point 11 is noise.
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="topic module" id="module6">
+    <h2>
+     Module 6 - Dimensionality Reduction
+    </h2>
+    <span class="tag">
+     05 hours
+    </span>
+    <p class="small">
+     Dimensionality-reduction techniques; feature selection and extraction; PCA; LDA; SVD.
+    </p>
+    <section class="subtopic" id="dimension">
+     <h3>
+       6.1 Dimensionality reduction, PCA, feature selection and LDA
+       <span class="q">
+       May 2023; May 2024; Nov 2024; May 2025; Nov 2025; Jun 2026
+      </span>
+      </h3>
+     <h4>
+       6.1.1 What is dimensionality reduction?
+      </h4>
+     <p>
+      Dimensionality reduction is the process of reducing the number of input features while preserving as much useful information as possible.
+     </p>
+     <p>
+      <strong>
+       Why use it?
+      </strong>
+      Reduces computation and storage, removes redundant/noisy variables, helps visualise data, can reduce overfitting and may improve clustering/classification when irrelevant dimensions are removed.
+     </p>
+     <h4>
+       6.1.2 How it helps classification and clustering
+      </h4>
+     <ul>
+      <li>
+       <strong>
+        Classification:
+       </strong>
+       removes irrelevant/redundant features, makes training faster, reduces noise and may improve generalization. The reduced features are then used to train a classifier such as SVM or Logistic Regression.
+      </li>
+      <li>
+       <strong>
+        Clustering:
+       </strong>
+       reduces high-dimensional data to a smaller space so distance calculations become more meaningful and clusters can be visualised. PCA is often used before K-means.
+      </li>
+     </ul>
+     <h4>
+       6.1.3 Feature selection vs feature extraction
+      </h4>
+     <table>
+      <tr>
+       <th>
+        Feature selection
+       </th>
+       <th>
+        Feature extraction
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Selects a subset of the original features.
+       </td>
+       <td>
+        Creates new features by transforming/combining original features.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Original meanings are retained.
+       </td>
+       <td>
+        New features may be harder to interpret.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Methods: filter (correlation, chi-square), wrapper (forward/backward selection), embedded (L1/Lasso, tree importance).
+       </td>
+       <td>
+        Methods: PCA, LDA and other projection/embedding methods.
+       </td>
+      </tr>
+     </table>
+     <h4>
+       6.1.4 Principal Component Analysis (PCA)
+      </h4>
+     <p>
+      PCA is an
+      <strong>
+       unsupervised
+      </strong>
+      linear dimensionality-reduction technique. It transforms correlated original features into a smaller set of uncorrelated variables called principal components. The first component captures the maximum possible variance; each next component captures the maximum remaining variance while being orthogonal to previous components.
+     </p>
+     <div class="diagram">
+      <svg aria-label="PCA projection illustration" role="img" viewbox="0 0 650 190">
+       <line stroke="#26384e" x1="45" x2="610" y1="155" y2="155">
+       </line>
+       <line stroke="#26384e" x1="45" x2="45" y1="155" y2="20">
+       </line>
+       <g fill="#3678b6">
+        <circle cx="100" cy="130" r="5">
+        </circle>
+        <circle cx="150" cy="115" r="5">
+        </circle>
+        <circle cx="195" cy="110" r="5">
+        </circle>
+        <circle cx="245" cy="95" r="5">
+        </circle>
+        <circle cx="300" cy="82" r="5">
+        </circle>
+        <circle cx="355" cy="70" r="5">
+        </circle>
+        <circle cx="410" cy="58" r="5">
+        </circle>
+       </g>
+       <path d="M80 140 L445 45" stroke="#bd7541" stroke-width="3">
+       </path>
+       <text fill="#bd7541" font-size="13" x="465" y="43">
+        PC1
+       </text>
+       <text fill="#596579" font-size="12" text-anchor="middle" x="320" y="178">
+        Project original points onto a lower-dimensional direction.
+       </text>
+      </svg>
+      <div class="caption">
+       PCA keeps directions with high variance, then projects the data onto the selected components.
+      </div>
+     </div>
+     <h4>
+       6.1.5 Steps of PCA
+      </h4>
+     <ol>
+      <li>
+       Prepare data; handle missing values and standardize features when their scales differ.
+      </li>
+      <li>
+       Compute the mean and centre each feature (subtract its mean).
+      </li>
+      <li>
+       Calculate the covariance matrix.
+      </li>
+      <li>
+       Find eigenvalues and eigenvectors of the covariance matrix.
+      </li>
+      <li>
+       Sort eigenvectors by decreasing eigenvalue. Eigenvalue indicates the variance captured.
+      </li>
+      <li>
+       Select the top k eigenvectors using explained variance (for example, retain around 90-95% when appropriate).
+      </li>
+      <li>
+       The explained variance ratio of component i is λᵢ / Σⱼλⱼ. Add these ratios in order until the cumulative total reaches the chosen threshold.
+      </li>
+      <li>
+       Project the original centred data onto these k eigenvectors to obtain reduced features.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Example:
+      </strong>
+      A student dataset may contain height, weight and waist size. Weight and waist size may be strongly correlated. PCA can combine the correlated measurements into a smaller number of components (for example, PC1 may represent overall body size), reducing three original features to one or two components with limited information loss.
+     </p>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      image compression/face recognition, visualisation of high-dimensional data, noise reduction, preprocessing before clustering/classification, and financial data analysis.
+     </p>
+     <h4>
+       6.1.6 Linear Discriminant Analysis (LDA)
+      </h4>
+     <p>
+      LDA is a
+      <strong>
+       supervised
+      </strong>
+      dimensionality-reduction technique. Unlike PCA, it uses class labels and finds directions that best separate classes. It tries to maximise between-class separation while minimising within-class spread.
+     </p>
+     <div class="eq">
+      Objective (concept): maximise between-class scatter / within-class scatter
+     </div>
+     <div class="eq">
+      J(w) = (wᵀ Sᴮ w) / (wᵀ Sᵂ w)
+     </div>
+     <p>
+      Sᴮ is the between-class scatter matrix and Sᵂ is the within-class scatter matrix. For C classes, LDA can produce at most C-1 discriminant directions.
+     </p>
+     <h4>
+       6.1.7 Steps of LDA
+      </h4>
+     <ol>
+      <li>
+       Separate the training data using known class labels.
+      </li>
+      <li>
+       Calculate the mean vector for each class and the overall mean.
+      </li>
+      <li>
+       Calculate within-class scatter Sᵂ and between-class scatter Sᴮ.
+      </li>
+      <li>
+       Find directions that maximise the ratio of between-class to within-class scatter (often eigenvectors of (Sᵂ)⁻¹Sᴮ).
+      </li>
+      <li>
+       Select the best discriminant directions and project observations onto them.
+      </li>
+      <li>
+       Use the reduced features for classification/visualisation.
+      </li>
+     </ol>
+     <p>
+      <strong>
+       Example:
+      </strong>
+      Suppose two classes of flowers have measurements of petal length and width. LDA uses the known flower labels to find a line where the two classes are as far apart as possible and each class is as compact as possible. The projected one-dimensional values can then be classified more easily.
+     </p>
+     <p>
+      <strong>
+       Applications:
+      </strong>
+      face recognition, medical diagnosis, document/topic classification, pattern recognition and preprocessing before classification.
+     </p>
+     <table>
+      <tr>
+       <th>
+        PCA
+       </th>
+       <th>
+        LDA
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Unsupervised; ignores class labels.
+       </td>
+       <td>
+        Supervised; uses class labels.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Maximises total data variance.
+       </td>
+       <td>
+        Maximises class separability.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Useful for compression, visualisation and noise reduction.
+       </td>
+       <td>
+        Useful when the final task is classification.
+       </td>
+      </tr>
+     </table>
+     <div class="memory">
+      <strong>
+       Remember:
+      </strong>
+      PCA = Preserve variance; LDA = Locate class separation.
+     </div>
+    </section>
+    <section class="subtopic" id="svd">
+     <h3>
+       6.2 SVD numerical - May 2023 Q3B
+       <span class="q">
+       May 2023
+      </span>
+      </h3>
+     <p>
+      Find the Singular Value Decomposition of:
+     </p>
+     <div class="eq center">
+      A = [ [ 2, 2 ], [ -1, 1 ] ]
+     </div>
+     <p>
+      SVD has the form
+      <strong>
+       A = UΣVᵀ
+      </strong>
+      , where U and V are orthogonal matrices and Σ contains non-negative singular values.
+     </p>
+     <h4>
+       6.2.1 Step 1: Find AᵀA
+      </h4>
+     <div class="eq">
+      Aᵀ = [ [2, -1], [2, 1] ]
+     </div>
+     <div class="eq">
+      AᵀA = [ [5, 3], [3, 5] ]
+     </div>
+     <h4>
+       6.2.2 Step 2: Find eigenvalues of AᵀA
+      </h4>
+     <div class="eq">
+      |AᵀA - λI| = (5-λ)² - 9 = 0
+     </div>
+     <div class="eq">
+      (5-λ)² = 9 ⇒ λ = 8, 2
+     </div>
+     <h4>
+       6.2.3 Step 3: Singular values
+      </h4>
+     <p>
+      Singular values are square roots of eigenvalues:
+     </p>
+     <div class="eq">
+      σ₁ = √8 = 2√2,   σ₂ = √2
+     </div>
+     <h4>
+       6.2.4 Step 4: Find eigenvectors and V
+      </h4>
+     <p>
+      For λ = 8, an eigenvector is [1, 1]ᵀ. For λ = 2, an eigenvector is [1, -1]ᵀ. Normalise both by dividing by √2.
+     </p>
+     <div class="eq">
+      V = (1/√2) [ [1, 1], [1, -1] ]
+     </div>
+     <h4>
+       6.2.5 Step 5: Find U using uᵢ = Avᵢ / σᵢ
+      </h4>
+     <div class="eq">
+      v₁ = (1/√2)[1,1]ᵀ ⇒ Av₁ = [2√2, 0]ᵀ ⇒ u₁ = [1,0]ᵀ
+     </div>
+     <div class="eq">
+      v₂ = (1/√2)[1,-1]ᵀ ⇒ Av₂ = [0,-√2]ᵀ ⇒ u₂ = [0,-1]ᵀ
+     </div>
+     <div class="eq">
+      U = [ [1, 0], [0, -1] ]
+     </div>
+     <h4>
+       6.2.6 Final answer
+      </h4>
+     <div class="callout">
+      <strong>
+       A = UΣVᵀ
+      </strong>
+     </div>
+     <div class="eq">
+      U = [ [1, 0], [0, -1] ]
+     </div>
+     <div class="eq">
+      Σ = [ [2√2, 0], [0, √2] ]
+     </div>
+     <div class="eq">
+      Vᵀ = (1/√2) [ [1, 1], [1, -1] ]
+     </div>
+     <p>
+      These matrices reconstruct the given A when multiplied as UΣVᵀ.
+     </p>
+    </section>
+   <section class="panel recap" id="recap6">
+    <h3>
+      Module 6 - 60-second recap: Dimensionality reduction
+    </h3>
+    <ul>
+     <li>
+      Dimensionality reduction cuts the number of features while keeping useful information: cheaper computation, easier visualisation, less noise and less overfitting.
+     </li>
+     <li>
+      Feature selection keeps original features (filter, wrapper, embedded); feature extraction builds new ones (PCA, LDA).
+     </li>
+     <li>
+      PCA is unsupervised: centre/standardize → covariance matrix → eigenvectors/eigenvalues → keep top-k by explained variance λᵢ/Σⱼλⱼ. It maximises variance.
+     </li>
+     <li>
+      LDA is supervised: it uses labels to maximise between-class scatter / within-class scatter and yields at most C−1 directions.
+     </li>
+     <li>
+      SVD: A = UΣVᵀ; singular values are the square roots of the eigenvalues of AᵀA. May 2023 answer: σ₁ = 2√2, σ₂ = √2.
+     </li>
+    </ul>
+   </section>
+   </section>
+   <section class="panel gloss" id="glossary">
+    <h2>
+      Key terms at a glance
+    </h2>
+    <p class="small">
+      One-line meanings for the terms repeatedly used across the six modules. Use this to decode a question before planning the answer.
+    </p>
+    <div class="grid">
+     <div class="mini"><strong>Bagging</strong><br/>Bootstrap aggregating: train models on random samples drawn with replacement, then vote or average.</div>
+     <div class="mini"><strong>Bias</strong><br/>Systematic error from assumptions that are too simple; high bias leads to underfitting.</div>
+     <div class="mini"><strong>Boosting</strong><br/>Build models sequentially so each one focuses on earlier errors; usually reduces bias.</div>
+     <div class="mini"><strong>CART</strong><br/>Classification and Regression Trees: binary-split decision trees using Gini for classification, MSE for regression.</div>
+     <div class="mini"><strong>Confusion matrix</strong><br/>Table of TP, FN, FP and TN that compares actual classes with predicted classes.</div>
+     <div class="mini"><strong>Core point</strong><br/>DBSCAN point with at least MinPts points (including itself) inside its ε-neighbourhood.</div>
+     <div class="mini"><strong>Cross-validation</strong><br/>Rotate validation folds (K-fold) to estimate generalization instead of relying on one split.</div>
+     <div class="mini"><strong>Entropy</strong><br/>Impurity measure −Σpᵢlog₂pᵢ; lower means purer. Information gain is entropy removed by a split.</div>
+     <div class="mini"><strong>Generalization error</strong><br/>Error on new, unseen data; estimated by the test-set error.</div>
+     <div class="mini"><strong>Gini index</strong><br/>Impurity measure 1 − Σpᵢ²; the split with the lowest weighted Gini is chosen.</div>
+     <div class="mini"><strong>Hyperplane</strong><br/>SVM decision boundary: a line in 2D, a plane in 3D, a hyperplane in higher dimensions.</div>
+     <div class="mini"><strong>Information gain</strong><br/>Entropy(parent) minus the weighted entropy of the children after a split.</div>
+     <div class="mini"><strong>Kernel trick</strong><br/>Compute similarities as if data were mapped to a higher-dimensional space, without doing the mapping explicitly.</div>
+     <div class="mini"><strong>Overfitting</strong><br/>Very low training error but high test error; the model has learned noise as well as signal.</div>
+     <div class="mini"><strong>Precision</strong><br/>TP/(TP+FP): how many predicted positives are actually positive.</div>
+     <div class="mini"><strong>Principal component</strong><br/>Uncorrelated direction that captures the largest remaining variance in PCA.</div>
+     <div class="mini"><strong>Recall</strong><br/>TP/(TP+FN): how many actual positives were found.</div>
+     <div class="mini"><strong>Regularization</strong><br/>Penalty on model complexity that discourages overfitting (L1, L2, pruning, early stopping).</div>
+     <div class="mini"><strong>Support vector</strong><br/>Training point closest to the SVM hyperplane; it determines the margin.</div>
+     <div class="mini"><strong>Underfitting</strong><br/>Model is too simple; high training error and high test error, usually from high bias.</div>
+     <div class="mini"><strong>Variance</strong><br/>Sensitivity to the particular training sample; high variance leads to overfitting.</div>
+    </div>
+   </section>
+   <section class="panel" id="formula-sheet">
+    <h2>
+     Ultra-fast formula sheet
+    </h2>
+    <table>
+     <tr>
+      <th>
+       Topic
+      </th>
+      <th>
+       Remember this
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Simple regression
+      </td>
+      <td>
+       ŷ = a + bx; b = [nΣxy - ΣxΣy]/[nΣx² - (Σx)²]; a = (Σy - bΣx)/n.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Regression errors
+      </td>
+      <td>
+       MAE = mean |y-ŷ|; MSE = mean (y-ŷ)²; RMSE = √MSE; R² = 1 - SSres/SStot.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Gini
+      </td>
+      <td>
+       Gini = 1 - Σpᵢ²; weighted Gini after split = Σ(nⱼ/n)Giniⱼ; choose the minimum.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Entropy
+      </td>
+      <td>
+       Entropy = -Σpᵢlog₂pᵢ; information gain = parent entropy - weighted child entropy.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Classification
+      </td>
+      <td>
+       Accuracy=(TP+TN)/N; Precision=TP/(TP+FP); Recall=TP/(TP+FN); Specificity=TN/(TN+FP); F1=2PR/(P+R).
+      </td>
+     </tr>
+     <tr>
+      <td>
+       ROC / Kappa
+      </td>
+      <td>
+       TPR=Recall; FPR=1-Specificity; κ=(Pₒ-Pₑ)/(1-Pₑ).
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Logistic Regression
+      </td>
+      <td>
+       p = 1/(1+e⁻ᶻ), z=β₀+Σβᵢxᵢ.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       DBSCAN
+      </td>
+      <td>
+       ε = neighbourhood radius; MinPts = minimum points including the point itself in its ε-neighbourhood.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       K-means
+      </td>
+      <td>
+       Assign nearest centroid → recompute mean → repeat until stable.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       PCA vs LDA
+      </td>
+      <td>
+       PCA maximises variance without labels; LDA uses labels and maximises class separation.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       SVM
+      </td>
+      <td>
+       Maximise margin; support vectors define the boundary; kernel trick handles non-linear patterns.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Random Forest
+      </td>
+      <td>
+       Bootstrap samples + random feature subsets + many trees + majority vote / average.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       EM
+      </td>
+      <td>
+       E-step estimates hidden memberships; M-step updates parameters; repeat until convergence.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       DBSCAN roles
+      </td>
+      <td>
+       Core: at least MinPts neighbours; border: reachable from a core but not core itself; noise: not density-reachable from a core.
+      </td>
+     </tr>
+    </table>
+    <h3>
+     Before writing any 10-mark answer
+    </h3>
+    <ol>
+     <li>
+      <strong>
+       1-2 marks — definition:
+      </strong>
+      one or two precise lines naming the concept and its purpose.
+     </li>
+     <li>
+      <strong>
+       2 marks — diagram:
+      </strong>
+      a labelled workflow or sketch with inputs and outputs; use the diagrams in this pack as a model.
+     </li>
+     <li>
+      <strong>
+       4 marks — core answer:
+      </strong>
+      numbered steps, formulas or a comparison table, written in the correct order.
+     </li>
+     <li>
+      <strong>
+       2 marks — evaluation:
+      </strong>
+      at least two advantages plus a limitation or an application tied to the topic.
+     </li>
+     <li>
+      <strong>
+       1 mark — conclusion:
+      </strong>
+      one line that links the answer back to the question asked.
+     </li>
+    </ol>
+    <p class="small">
+     For a numerical, the marks sit in the working: formula → substitution → intermediate values → final answer with units. A correct answer with no working earns far less than a near-correct answer with clear steps.
+    </p>
+   </section>
+   <section class="panel" id="self-check">
+    <h2>
+      Quick self-check
+    </h2>
+    <p class="small">
+      Say each answer aloud before opening the list. These are recall prompts only — every answer is already in the sections above. If you cannot answer one, jump back to that module and re-read its 60-second recap.
+    </p>
+    <details>
+     <summary>
+      Module 1 — basics
+     </summary>
+     <ol>
+     <li>
+      State the eight steps of an ML application in order, without looking.
+     </li>
+     <li>
+      Name the four types of ML and the training information each one uses.
+     </li>
+     <li>
+      Write the expected-test-error decomposition and explain bias versus variance in one sentence each.
+     </li>
+     <li>
+      List four issues that can make a model fail on new data.
+     </li>
+     </ol>
+      </details>      <details>
+     <summary>
+      Module 2 — regression, trees and metrics
+     </summary>
+     <ol>
+     <li>
+      Write the least-squares formulas for slope b and intercept a.
+     </li>
+     <li>
+      State MAE, MSE, RMSE and R², and say what R² measures.
+     </li>
+     <li>
+      Write the sigmoid function and the threshold rule for logistic regression.
+     </li>
+     <li>
+      Explain how weighted Gini is used to pick the root node, and name one advantage of CART.
+     </li>
+     <li>
+      Write the confusion-matrix formulas for accuracy, precision, recall, specificity and F1.
+     </li>
+     </ol>
+      </details>      <details>
+     <summary>
+      Module 3 — ensembles
+     </summary>
+     <ol>
+     <li>
+      Compare bagging and boosting in three points each.
+     </li>
+     <li>
+      List the Random Forest steps and two of its advantages.
+     </li>
+     <li>
+      Explain what XGBoost adds on top of ordinary gradient boosting.
+     </li>
+     <li>
+      Describe K-fold cross-validation in four steps and say why a final test set is kept aside.
+     </li>
+     </ol>
+      </details>      <details>
+     <summary>
+      Module 4 — classification
+     </summary>
+     <ol>
+     <li>
+      Sketch and label the hyperplane, margin boundaries and support vectors.
+     </li>
+     <li>
+      Write the hard-margin and soft-margin optimization objectives.
+     </li>
+     <li>
+      Name four kernels and state the role of C.
+     </li>
+     <li>
+      Compare One-vs-Rest, One-vs-One and softmax multiclass strategies.
+     </li>
+     </ol>
+      </details>      <details>
+     <summary>
+      Module 5 — clustering
+     </summary>
+     <ol>
+     <li>
+      Define core, border and noise points in DBSCAN.
+     </li>
+     <li>
+      List the K-means steps and write its within-cluster SSE objective.
+     </li>
+     <li>
+      Explain MST clustering in four steps.
+     </li>
+     <li>
+      State what happens in the E-step and the M-step of EM.
+     </li>
+     </ol>
+      </details>      <details>
+     <summary>
+      Module 6 — dimensionality reduction
+     </summary>
+     <ol>
+     <li>
+      Compare PCA and LDA in three points each.
+     </li>
+     <li>
+      List the PCA steps and define explained variance ratio.
+     </li>
+     <li>
+      Write the SVD form A = UΣVᵀ and explain where the singular values come from.
+     </li>
+     </ol>
+    </details>
+   </section>
+   <section class="panel" id="final-check">
+    <h2>
+     Final numerical answers to check before the exam
+    </h2>
+    <table>
+     <tr>
+      <th>
+       Paper / problem
+      </th>
+      <th>
+       Verified result
+      </th>
+     </tr>
+     <tr>
+      <td>
+       May 2023 Gini (Profit)
+      </td>
+      <td>
+       Root feature = Age; weighted Gini = 0.20.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       May 2023 SVD
+      </td>
+      <td>
+       Singular values = 2√2 and √2; see full U, Σ, Vᵀ in Module 6.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       May 2024 regression (time and mass)
+      </td>
+      <td>
+       ŷ ≈ 11.5065 + 12.2078x.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       May 2024 Gini (Emotion)
+      </td>
+      <td>
+       Root feature = Colour; weighted Gini ≈ 0.1111.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Nov 2024 Gini (car stolen?)
+      </td>
+      <td>
+       Root feature = Type; weighted Gini ≈ 0.4167.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       2025 monthly expenditure
+      </td>
+      <td>
+       ŷ = 3.2 + 8.4x; month 6 = 53.6 thousand.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       May/June 2025 student grades
+      </td>
+      <td>
+       ŷ ≈ 25.13394 + 0.64982X; at X=86, Ŷ ≈ 81.02.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Nov 2025 grant-reader matrix
+      </td>
+      <td>
+       Accuracy 70%; Precision 66.67%; Recall 80%; F1 ≈ 72.73%.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       June 2026 confusion matrix
+      </td>
+      <td>
+       Accuracy 77.78%; Precision 76.92%; Recall 83.33%; F1 = 80%.
+      </td>
+     </tr>
+     <tr>
+      <td>
+       June 2026 DBSCAN
+      </td>
+      <td>
+       Cluster = {1,2,3.5,4,5}; core = {2,3.5,4}; border = {1,5}; noise = {11}.
+      </td>
+     </tr>
+    </table>
+   </section>
+  </main>
+  <footer>
+   Prepared from the six uploaded Machine Learning papers and the supplied six-module syllabus. Check the question wording and show workings in the exam.
+  </footer>
+ </body>
+</html>
